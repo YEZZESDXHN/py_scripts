@@ -11,7 +11,7 @@ from udsoncan.client import Client
 import udsoncan.configs
 import isotp
 import datetime
-
+from py_can_tool import Ui_Form
 
 # app_name = 'xl_tool_py'
 #
@@ -178,39 +178,13 @@ class VectorCanParamsd(dict):
     output_mode: can.interfaces.vector.xldefine.XL_OutputMode
 
 
-class busThread(QThread):
-    start_bus = pyqtSignal()
-
-    def __init__(self, app_name, channel_index, vectorAvailableConfigs_index, fd, vectorChannelCanParams,isotp_params):
-        super().__init__()
-        self._appname = app_name
-        self._channelindex = channel_index
-        self._vectorAvailableConfigsindex = vectorAvailableConfigs_index
-        self._fd = fd
-        self._vectorChannelCanParams = vectorChannelCanParams
-        self._isotp_params = isotp_params
-
-    def run(self):
-        print("busThread(QThread):线程")
-        VectorBus.set_application_config(app_name=self._appname, app_channel=self._channelindex,
-                                         **self._vectorAvailableConfigsindex)
-        self.canbus = VectorBus(channel=self._channelindex, app_name=self._appname, fd=bool(self._fd), **self._vectorChannelCanParams)
-        # uds_config = udsoncan.configs.default_client_config.copy()
-        canlister = can.Printer()
-        notifier = can.Notifier(self.canbus, [])  # Add a debug listener that print all messages
-        # self.tp_addr = isotp.Address(isotp.AddressingMode.Normal_11bits, txid=0x123,
-        #                         rxid=0x456)  # Network layer addressing scheme
-        self.tp_addr = isotp.Address(isotp.AddressingMode.Normal_29bits, txid=0x18DA05F1, rxid=0x18DAF105,functional_id=0x18DB33F1)
-        # # stack = isotp.CanStack(bus=bus, address=tp_addr, params=isotp_params)              # isotp v1.x has no notifier support
-        stack = isotp.NotifierBasedCanStack(bus=self.canbus, notifier=notifier, address=self.tp_addr, params=self._isotp_params)
-        # self.conn = PythonIsoTpConnection(stack)
-        # self.conn.open()
 
 
-class MainWindows(QWidget):
+class MainWindows(QWidget,Ui_Form):
 
     def __init__(self):
         super().__init__()
+        self.setupUi(self)
         self.vectorBusType = None
         self.vectorBuscan20 = None
         self.vectorBuscanfd = None
@@ -222,7 +196,7 @@ class MainWindows(QWidget):
         self.channel_index = None
         self.appName = 'uds_tool'
 
-        self.ui = uic.loadUi("py_can_tool.ui")
+        # self.ui = uic.loadUi("py_can_tool.ui")
         self.init_vector()
 
     def init_vector(self):
@@ -276,11 +250,13 @@ class MainWindows(QWidget):
 
     def init_ui(self):
 
-        self.ui.comboBox.activated.connect(self.ui_update_bus_type)
-        self.ui.comboBox_2.activated.connect(self.ui_update_bus_params)
-        self.ui.pushButton.clicked.connect(self.bus_start)
+        self.comboBox.activated.connect(self.ui_update_bus_type)
+        self.comboBox_2.activated.connect(self.ui_update_bus_params)
+        self.pushButton.clicked.connect(self.bus_start)
+        self.pushButton_4.clicked.connect(self.send_can_uds)
 
-        # self.ui.comboBox_2.activated.connect(self.set_CANFD_ui)
+
+        # self.comboBox_2.activated.connect(self.set_CANFD_ui)
         self.ui_update_channel()
         self.ui_update_bus_type()
 
@@ -288,9 +264,9 @@ class MainWindows(QWidget):
         # self.watch_drive.file_watcher.addPath("/dev")  # 监视/dev目录下的设备变化
 
     def ui_update_channel(self):
-        self.ui.comboBox.clear()
+        self.comboBox.clear()
         for channel_list in self.vectorAvailableConfigs:
-            self.ui.comboBox.addItem(str(channel_list['vector_channel_config'].name) +
+            self.comboBox.addItem(str(channel_list['vector_channel_config'].name) +
                                      ' ' +
                                      str(channel_list['vector_channel_config'].transceiver_name) +
                                      ' ' +
@@ -298,80 +274,80 @@ class MainWindows(QWidget):
         # self.set_ui_with_vector_confg()
 
     def ui_update_bus_type(self):
-        self.channel_index = self.ui.comboBox.currentIndex()
+        self.channel_index = self.comboBox.currentIndex()
 
         # print(channel_index)
         if self.vectorAvailableConfigs[self.channel_index]['vector_channel_config'].channel_capabilities.value & \
                 can.interfaces.vector.xldefine.XL_ChannelCapabilities.XL_CHANNEL_FLAG_CANFD_BOSCH_SUPPORT.value:  # 支持CANfd
 
-            self.ui.comboBox_2.clear()
-            self.ui.comboBox_2.addItem('CAN')
-            self.ui.comboBox_2.addItem('CANFD')
+            self.comboBox_2.clear()
+            self.comboBox_2.addItem('CAN')
+            self.comboBox_2.addItem('CANFD')
             self.chooseBusType = 1
-            self.ui.comboBox_2.setCurrentIndex(self.chooseBusType)
-            # self.ui.comboBox_2.setCurrentIndex(self.vectorBusType)
+            self.comboBox_2.setCurrentIndex(self.chooseBusType)
+            # self.comboBox_2.setCurrentIndex(self.vectorBusType)
             # print(self.vectorAvailableConfigs[choose_index]['vector_channel_config'])
 
 
         else:
-            self.ui.comboBox_2.clear()
-            self.ui.comboBox_2.addItem('CAN')
+            self.comboBox_2.clear()
+            self.comboBox_2.addItem('CAN')
             self.chooseBusType = 0
-            self.ui.comboBox_2.setCurrentIndex(self.chooseBusType)
+            self.comboBox_2.setCurrentIndex(self.chooseBusType)
         self.ui_update_bus_params()
 
     def ui_update_bus_params(self):
-        if self.ui.comboBox_2.currentText() == 'CANFD':
+        if self.comboBox_2.currentText() == 'CANFD':
             self.chooseBusType = 1
-            # print(self.ui.comboBox_2.currentText())
+            # print(self.comboBox_2.currentText())
 
-            self.ui.lineEdit_6.setVisible(True)
-            self.ui.lineEdit_9.setVisible(True)
-            self.ui.lineEdit_5.setVisible(True)
-            self.ui.lineEdit_7.setVisible(True)
+            self.lineEdit_6.setVisible(True)
+            self.lineEdit_9.setVisible(True)
+            self.lineEdit_5.setVisible(True)
+            self.lineEdit_7.setVisible(True)
 
-            self.ui.label_7.setVisible(True)
-            self.ui.label_12.setVisible(True)
-            self.ui.label_6.setVisible(True)
-            self.ui.label_8.setVisible(True)
+            self.label_7.setVisible(True)
+            self.label_12.setVisible(True)
+            self.label_6.setVisible(True)
+            self.label_8.setVisible(True)
 
-            self.ui.lineEdit.setText(
+            self.lineEdit.setText(
                 str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.bitrate))
-            self.ui.lineEdit_6.setText(
+            self.lineEdit_6.setText(
                 str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.data_bitrate))
-            self.ui.lineEdit_3.setText(
+            self.lineEdit_3.setText(
                 str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.sjw_abr))
-            self.ui.lineEdit_8.setText(
+            self.lineEdit_8.setText(
                 str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.tseg1_abr))
-            self.ui.lineEdit_4.setText(
+            self.lineEdit_4.setText(
                 str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.tseg2_abr))
-            self.ui.lineEdit_9.setText(
+            self.lineEdit_9.setText(
                 str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.sjw_dbr))
-            self.ui.lineEdit_5.setText(
+            self.lineEdit_5.setText(
                 str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.tseg1_dbr))
-            self.ui.lineEdit_7.setText(
+            self.lineEdit_7.setText(
                 str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.tseg2_dbr))
         else:
             self.chooseBusType = 0
-            # print(self.ui.comboBox_2.currentText())
-            self.ui.lineEdit.setText(
+            # print(self.comboBox_2.currentText())
+            self.lineEdit.setText(
                 str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.can.bitrate))
-            self.ui.lineEdit_3.setText(
+            self.lineEdit_3.setText(
                 str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.can.sjw))
-            self.ui.lineEdit_8.setText(
+            self.lineEdit_8.setText(
                 str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.can.tseg1))
-            self.ui.lineEdit_4.setText(
+            self.lineEdit_4.setText(
                 str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.can.tseg2))
 
-            self.ui.lineEdit_6.setVisible(False)
-            self.ui.lineEdit_9.setVisible(False)
-            self.ui.lineEdit_5.setVisible(False)
-            self.ui.lineEdit_7.setVisible(False)
+            self.lineEdit_6.setVisible(False)
+            self.lineEdit_9.setVisible(False)
+            self.lineEdit_5.setVisible(False)
+            self.lineEdit_7.setVisible(False)
 
-            self.ui.label_7.setVisible(False)
-            self.ui.label_12.setVisible(False)
-            self.ui.label_6.setVisible(False)
-            self.ui.label_8.setVisible(False)
+            self.label_7.setVisible(False)
+            self.label_12.setVisible(False)
+            self.label_6.setVisible(False)
+            self.label_8.setVisible(False)
 
     def bus_start(self):
         # if self.is_start == 0:
@@ -417,11 +393,13 @@ class MainWindows(QWidget):
     def resetCANparams(self):
         self.vectorAvailableConfigs = VectorBus._detect_available_configs()
         self.ui_update_bus_type()
-
+    def send_can_uds(self):
+        send_msg=self.textEdit.toPlainText()
+        print(send_msg)
 
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     w = MainWindows()
-    w.ui.show()
+    w.show()
     sys.exit(app.exec_())
