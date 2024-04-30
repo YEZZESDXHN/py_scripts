@@ -1,16 +1,13 @@
 import sys
-import time
 
 import can
-from PyQt5 import uic
 from PyQt5.QtCore import QThread, pyqtSignal
-from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow
+from PyQt5.QtWidgets import QApplication, QMainWindow
 from can.interfaces.vector import VectorBus
 from udsoncan.connections import PythonIsoTpConnection
 from udsoncan.client import Client
 import udsoncan.configs
 import isotp
-import datetime
 from my_ui import Ui_MainWindow
 
 
@@ -150,14 +147,25 @@ class MainWindows(QMainWindow, Ui_MainWindow):
         self.channel_index = self.comboBox.currentIndex()
 
         # print(channel_index)
+        # print(self.vectorAvailableConfigs[self.channel_index]['vector_channel_config'])
         if self.vectorAvailableConfigs[self.channel_index]['vector_channel_config'].channel_capabilities.value & \
                 can.interfaces.vector.xldefine.XL_ChannelCapabilities.XL_CHANNEL_FLAG_CANFD_BOSCH_SUPPORT.value:  # 支持CANfd
-
             self.comboBox_2.clear()
             self.comboBox_2.addItem('CAN')
             self.comboBox_2.addItem('CANFD')
-            self.chooseBusType = 1
-            self.comboBox_2.setCurrentIndex(self.chooseBusType)
+            if self.vectorAvailableConfigs[self.channel_index]['vector_channel_config'].is_on_bus:
+                # print(self.vectorAvailableConfigs[self.channel_index]['vector_channel_config'].bus_params.can.can_op_mode)
+                if self.vectorAvailableConfigs[self.channel_index]['vector_channel_config'].bus_params.can.can_op_mode == \
+                        can.interfaces.vector.xldefine.XL_CANFD_BusParams_CanOpMode.XL_BUS_PARAMS_CANOPMODE_CAN20:
+                    self.chooseBusType = 0
+                    self.comboBox_2.setCurrentIndex(self.chooseBusType)
+                else:
+                    self.chooseBusType = 1
+                    self.comboBox_2.setCurrentIndex(self.chooseBusType)
+
+            else:
+                self.chooseBusType = 1
+                self.comboBox_2.setCurrentIndex(self.chooseBusType)
             # self.comboBox_2.setCurrentIndex(self.vectorBusType)
             # print(self.vectorAvailableConfigs[choose_index]['vector_channel_config'])
 
