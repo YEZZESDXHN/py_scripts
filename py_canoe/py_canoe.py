@@ -234,8 +234,12 @@ class MainWindows(QMainWindow, Ui_MainWindow):
         if self.is_start == 0:
             VectorBus.set_application_config(app_name=self.appName, app_channel=self.channel_index,
                                              **self.vectorAvailableConfigs[self.channel_index])
-            self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName, fd=bool(self.chooseBusType),
-                                    **self.vectorChannelCanParams)
+            try:
+                self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName, fd=bool(self.chooseBusType),
+                                        **self.vectorChannelCanParams)
+            except can.CanInitializationError as e:
+                self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName)
+                print('CanInitializationError:',e)
             # uds_config = udsoncan.configs.default_client_config.copy()
             canlister = can.Printer()
             self.notifier = can.Notifier(self.canbus, [])  # Add a debug listener that print all messages
