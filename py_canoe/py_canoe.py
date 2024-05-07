@@ -2,14 +2,14 @@ import sys
 
 import can
 from PyQt5.QtCore import QThread, pyqtSignal
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtWidgets import QApplication, QMainWindow,QDialog
 from can.interfaces.vector import VectorBus
 from udsoncan.connections import PythonIsoTpConnection
 from udsoncan.client import Client
 import udsoncan.configs
 import isotp
-from my_ui import Ui_MainWindow
-
+from my_ui import Ui_MainWindow,Ui_CANParams
+# from CANparams import Ui_CANParams
 
 class VectorCanParamsd(dict):
     bitrate: int
@@ -50,9 +50,15 @@ class busThread(QThread):
             print("错误:", e)
             self.uds_rx_finished.emit(str(e))
 
+class canparams_ui(QDialog , Ui_CANParams):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+    def show_can_params_ui(self):
+        self.show()
 
 class MainWindows(QMainWindow, Ui_MainWindow):
-
+    # show_CAN_params = pyqtSignal()
     def __init__(self):
         super().__init__()
         self.setupUi(self)
@@ -66,7 +72,9 @@ class MainWindows(QMainWindow, Ui_MainWindow):
         self.is_start = 0
         self.channel_index = None
         self.appName = 'uds_tool'
-
+        # self.canparams_ui = canparams_ui()
+        # self.setCentralWidget(self.canparams_ui)
+        # self.canparams_ui.show()
         # self.ui = uic.loadUi("py_can_tool.ui")
         self.init_vector()
 
@@ -75,8 +83,7 @@ class MainWindows(QMainWindow, Ui_MainWindow):
         self.vectorAvailableConfigs = VectorBus._detect_available_configs()
         # print(self.vectorAvailableConfigs[0]['vector_channel_config'])
         # self.channel_lists = can.interfaces.vector.get_channel_configs()
-        if self.vectorAvailableConfigs is not None:
-            self.init_ui()  # 根据获取的VECTOR硬件信息初始化ui界面
+
 
         self.vectorChannelCanParams = VectorCanParamsd(
             bitrate=500000,
@@ -90,7 +97,6 @@ class MainWindows(QMainWindow, Ui_MainWindow):
             tseg2_dbr=4,
             output_mode=can.interfaces.vector.xldefine.XL_OutputMode.XL_OUTPUT_MODE_NORMAL,
         )
-
         self.isotp_params = {
             'blocking_send': True,
             'stmin': 32,
@@ -118,6 +124,8 @@ class MainWindows(QMainWindow, Ui_MainWindow):
             # Ignored when rate_limit_enable=False. Sets the averaging window size for bitrate calculation when rate_limit_enable=True
             'listen_mode': False,  # Does not use the listen_mode which prevent transmission.
         }
+        if self.vectorAvailableConfigs is not None:
+            self.init_ui()  # 根据获取的VECTOR硬件信息初始化ui界面
 
     def init_ui(self):
 
@@ -126,12 +134,23 @@ class MainWindows(QMainWindow, Ui_MainWindow):
         self.pushButton.clicked.connect(self.bus_start)
         self.pushButton_4.clicked.connect(self.send_can_uds)
 
+
+
+        # self.pushButton_7.clicked.connect(self.show_can_params_ui)
+
         # self.comboBox_2.activated.connect(self.set_CANFD_ui)
         self.ui_update_channel()
+        self.ui_update_bus_params_default()
         self.ui_update_bus_type()
 
         # self.watch_drive=DeviceWatcher()
         # self.watch_drive.file_watcher.addPath("/dev")  # 监视/dev目录下的设备变化
+
+
+    # def show_can_params_ui(self):
+    #     self.canparams_ui.show()
+        # self.setDisabled(True)
+
 
     def ui_update_channel(self):
         self.comboBox.clear()
@@ -177,6 +196,46 @@ class MainWindows(QMainWindow, Ui_MainWindow):
             self.comboBox_2.setCurrentIndex(self.chooseBusType)
         self.ui_update_bus_params()
 
+    def set_can_params(self):
+        print('set can params')
+        # self.vectorChannelCanParams['bitrate']=int(self.lineEdit.text())
+        # self.vectorChannelCanParams['data_bitrate']=int(self.lineEdit_6.text())
+        # self.vectorChannelCanParams['sjw_abr']=int(self.lineEdit_3.text())
+        # self.vectorChannelCanParams['tseg1_abr']=int(self.lineEdit_8.text())
+        # self.vectorChannelCanParams['tseg2_abr']=int(self.lineEdit_4.text())
+        # self.vectorChannelCanParams['sjw_dbr']=int(self.lineEdit_9.text())
+        # self.vectorChannelCanParams['tseg1_dbr']=int(self.lineEdit_5.text())
+        # self.vectorChannelCanParams['tseg2_dbr']=int(self.lineEdit_7.text())
+
+
+
+    def ui_update_bus_params_default(self):
+        # print(self.vectorChannelCanParams)
+        self.lineEdit.setText(
+            str(self.vectorChannelCanParams['bitrate']))
+        self.lineEdit_6.setText(
+            str(self.vectorChannelCanParams['data_bitrate']))
+        self.lineEdit_3.setText(
+            str(self.vectorChannelCanParams['sjw_abr']))
+        self.lineEdit_8.setText(
+            str(self.vectorChannelCanParams['tseg1_abr']))
+        self.lineEdit_4.setText(
+            str(self.vectorChannelCanParams['tseg2_abr']))
+        self.lineEdit_9.setText(
+            str(self.vectorChannelCanParams['sjw_dbr']))
+        self.lineEdit_5.setText(
+            str(self.vectorChannelCanParams['tseg1_dbr']))
+        self.lineEdit_7.setText(
+            str(self.vectorChannelCanParams['tseg2_dbr']))
+
+        # self.lineEdit.editingFinished.connect(self.set_can_params)
+        # self.lineEdit_6.editingFinished.connect(self.set_can_params)
+        # self.lineEdit_3.editingFinished.connect(self.set_can_params)
+        # self.lineEdit_8.editingFinished.connect(self.set_can_params)
+        # self.lineEdit_4.editingFinished.connect(self.set_can_params)
+        # self.lineEdit_9.editingFinished.connect(self.set_can_params)
+        # self.lineEdit_5.editingFinished.connect(self.set_can_params)
+        # self.lineEdit_7.editingFinished.connect(self.set_can_params)
     def ui_update_bus_params(self):
         if self.comboBox_2.currentText() == 'CANFD':
             self.chooseBusType = 1
@@ -192,34 +251,26 @@ class MainWindows(QMainWindow, Ui_MainWindow):
             self.label_6.setVisible(True)
             self.label_8.setVisible(True)
 
-            self.lineEdit.setText(
-                str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.bitrate))
-            self.lineEdit_6.setText(
-                str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.data_bitrate))
-            self.lineEdit_3.setText(
-                str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.sjw_abr))
-            self.lineEdit_8.setText(
-                str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.tseg1_abr))
-            self.lineEdit_4.setText(
-                str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.tseg2_abr))
-            self.lineEdit_9.setText(
-                str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.sjw_dbr))
-            self.lineEdit_5.setText(
-                str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.tseg1_dbr))
-            self.lineEdit_7.setText(
-                str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.tseg2_dbr))
+            if self.vectorAvailableConfigs[self.channel_index]['vector_channel_config'].is_on_bus:
+                self.lineEdit.setText(
+                    str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.bitrate))
+                self.lineEdit_6.setText(
+                    str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.data_bitrate))
+                self.lineEdit_3.setText(
+                    str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.sjw_abr))
+                self.lineEdit_8.setText(
+                    str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.tseg1_abr))
+                self.lineEdit_4.setText(
+                    str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.tseg2_abr))
+                self.lineEdit_9.setText(
+                    str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.sjw_dbr))
+                self.lineEdit_5.setText(
+                    str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.tseg1_dbr))
+                self.lineEdit_7.setText(
+                    str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.tseg2_dbr))
+
         else:
             self.chooseBusType = 0
-            # print(self.comboBox_2.currentText())
-            self.lineEdit.setText(
-                str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.can.bitrate))
-            self.lineEdit_3.setText(
-                str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.can.sjw))
-            self.lineEdit_8.setText(
-                str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.can.tseg1))
-            self.lineEdit_4.setText(
-                str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.can.tseg2))
-
             self.lineEdit_6.setVisible(False)
             self.lineEdit_9.setVisible(False)
             self.lineEdit_5.setVisible(False)
@@ -229,16 +280,34 @@ class MainWindows(QMainWindow, Ui_MainWindow):
             self.label_12.setVisible(False)
             self.label_6.setVisible(False)
             self.label_8.setVisible(False)
+            # print(self.comboBox_2.currentText())
+            if self.vectorAvailableConfigs[self.channel_index]['vector_channel_config'].is_on_bus:
+                self.lineEdit.setText(
+                    str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.can.bitrate))
+                self.lineEdit_3.setText(
+                    str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.can.sjw))
+                self.lineEdit_8.setText(
+                    str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.can.tseg1))
+                self.lineEdit_4.setText(
+                    str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.can.tseg2))
+
+
 
     def bus_start(self):
         if self.is_start == 0:
             VectorBus.set_application_config(app_name=self.appName, app_channel=self.channel_index,
                                              **self.vectorAvailableConfigs[self.channel_index])
             try:
-                self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName, fd=bool(self.chooseBusType),
-                                        **self.vectorChannelCanParams)
+                if self.vectorAvailableConfigs[self.channel_index]['vector_channel_config'].is_on_bus:
+                    self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName)
+                else:
+                    self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName,
+                                            fd=bool(self.chooseBusType),
+                                            **self.vectorChannelCanParams)
+
             except can.CanInitializationError as e:
                 self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName)
+
                 print('CanInitializationError:',e)
             # uds_config = udsoncan.configs.default_client_config.copy()
             canlister = can.Printer()
@@ -267,7 +336,6 @@ class MainWindows(QMainWindow, Ui_MainWindow):
             self.lineEdit_7.setDisabled(True)
 
             self.resetCANparams()
-
 
 
         else:
@@ -348,5 +416,7 @@ class MainWindows(QMainWindow, Ui_MainWindow):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     w = MainWindows()
+    # canparas_ui = canparas_ui()
+    # w.show_CAN_params.connect(canparas_ui.show_can_params_ui)
     w.show()
     sys.exit(app.exec_())
