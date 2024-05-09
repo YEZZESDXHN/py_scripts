@@ -66,6 +66,7 @@ class MainWindows(QMainWindow, Ui_MainWindow):
         self.vectorBuscan20 = None
         self.vectorBuscanfd = None
         self.vectorChannelCanParams = None
+        self.vectorChannelCanParamsDefault = None
         self.vectorAvailableConfigs = None
         self.ui = None
         self.vectorBusType = None  # 0:CAN2.2  1: CANFD
@@ -86,6 +87,19 @@ class MainWindows(QMainWindow, Ui_MainWindow):
 
 
         self.vectorChannelCanParams = VectorCanParamsd(
+            bitrate=500000,
+            data_bitrate=2000000,
+            sjw_abr=2,
+            tseg1_abr=63,
+            tseg2_abr=16,
+            sam_abr=1,
+            sjw_dbr=2,
+            tseg1_dbr=15,
+            tseg2_dbr=4,
+            output_mode=can.interfaces.vector.xldefine.XL_OutputMode.XL_OUTPUT_MODE_NORMAL,
+        )
+
+        self.vectorChannelCanParamsDefault = VectorCanParamsd(
             bitrate=500000,
             data_bitrate=2000000,
             sjw_abr=2,
@@ -133,8 +147,16 @@ class MainWindows(QMainWindow, Ui_MainWindow):
         self.comboBox_2.activated.connect(self.ui_update_bus_params)
         self.pushButton.clicked.connect(self.bus_start)
         self.pushButton_4.clicked.connect(self.send_can_uds)
+        self.comboBox_3.activated.connect(self.set_send_msg_type)
 
-
+        self.lineEdit.editingFinished.connect(self.set_can_params)
+        self.lineEdit_6.editingFinished.connect(self.set_can_params)
+        self.lineEdit_3.editingFinished.connect(self.set_can_params)
+        self.lineEdit_8.editingFinished.connect(self.set_can_params)
+        self.lineEdit_4.editingFinished.connect(self.set_can_params)
+        self.lineEdit_9.editingFinished.connect(self.set_can_params)
+        self.lineEdit_5.editingFinished.connect(self.set_can_params)
+        self.lineEdit_7.editingFinished.connect(self.set_can_params)
 
         # self.pushButton_7.clicked.connect(self.show_can_params_ui)
 
@@ -197,45 +219,37 @@ class MainWindows(QMainWindow, Ui_MainWindow):
         self.ui_update_bus_params()
 
     def set_can_params(self):
-        print('set can params')
-        # self.vectorChannelCanParams['bitrate']=int(self.lineEdit.text())
-        # self.vectorChannelCanParams['data_bitrate']=int(self.lineEdit_6.text())
-        # self.vectorChannelCanParams['sjw_abr']=int(self.lineEdit_3.text())
-        # self.vectorChannelCanParams['tseg1_abr']=int(self.lineEdit_8.text())
-        # self.vectorChannelCanParams['tseg2_abr']=int(self.lineEdit_4.text())
-        # self.vectorChannelCanParams['sjw_dbr']=int(self.lineEdit_9.text())
-        # self.vectorChannelCanParams['tseg1_dbr']=int(self.lineEdit_5.text())
-        # self.vectorChannelCanParams['tseg2_dbr']=int(self.lineEdit_7.text())
+        self.vectorChannelCanParams['bitrate']=int(self.lineEdit.text())
+        self.vectorChannelCanParams['data_bitrate']=int(self.lineEdit_6.text())
+        self.vectorChannelCanParams['sjw_abr']=int(self.lineEdit_3.text())
+        self.vectorChannelCanParams['tseg1_abr']=int(self.lineEdit_8.text())
+        self.vectorChannelCanParams['tseg2_abr']=int(self.lineEdit_4.text())
+        self.vectorChannelCanParams['sjw_dbr']=int(self.lineEdit_9.text())
+        self.vectorChannelCanParams['tseg1_dbr']=int(self.lineEdit_5.text())
+        self.vectorChannelCanParams['tseg2_dbr']=int(self.lineEdit_7.text())
 
 
 
     def ui_update_bus_params_default(self):
         # print(self.vectorChannelCanParams)
         self.lineEdit.setText(
-            str(self.vectorChannelCanParams['bitrate']))
+            str(self.vectorChannelCanParamsDefault['bitrate']))
         self.lineEdit_6.setText(
-            str(self.vectorChannelCanParams['data_bitrate']))
+            str(self.vectorChannelCanParamsDefault['data_bitrate']))
         self.lineEdit_3.setText(
-            str(self.vectorChannelCanParams['sjw_abr']))
+            str(self.vectorChannelCanParamsDefault['sjw_abr']))
         self.lineEdit_8.setText(
-            str(self.vectorChannelCanParams['tseg1_abr']))
+            str(self.vectorChannelCanParamsDefault['tseg1_abr']))
         self.lineEdit_4.setText(
-            str(self.vectorChannelCanParams['tseg2_abr']))
+            str(self.vectorChannelCanParamsDefault['tseg2_abr']))
         self.lineEdit_9.setText(
-            str(self.vectorChannelCanParams['sjw_dbr']))
+            str(self.vectorChannelCanParamsDefault['sjw_dbr']))
         self.lineEdit_5.setText(
-            str(self.vectorChannelCanParams['tseg1_dbr']))
+            str(self.vectorChannelCanParamsDefault['tseg1_dbr']))
         self.lineEdit_7.setText(
-            str(self.vectorChannelCanParams['tseg2_dbr']))
+            str(self.vectorChannelCanParamsDefault['tseg2_dbr']))
 
-        # self.lineEdit.editingFinished.connect(self.set_can_params)
-        # self.lineEdit_6.editingFinished.connect(self.set_can_params)
-        # self.lineEdit_3.editingFinished.connect(self.set_can_params)
-        # self.lineEdit_8.editingFinished.connect(self.set_can_params)
-        # self.lineEdit_4.editingFinished.connect(self.set_can_params)
-        # self.lineEdit_9.editingFinished.connect(self.set_can_params)
-        # self.lineEdit_5.editingFinished.connect(self.set_can_params)
-        # self.lineEdit_7.editingFinished.connect(self.set_can_params)
+
     def ui_update_bus_params(self):
         if self.comboBox_2.currentText() == 'CANFD':
             self.chooseBusType = 1
@@ -269,6 +283,15 @@ class MainWindows(QMainWindow, Ui_MainWindow):
                 self.lineEdit_7.setText(
                     str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.canfd.tseg2_dbr))
 
+
+
+            # set send bus type comboBox
+            self.comboBox_3.clear()
+            self.comboBox_3.addItem('CAN')
+            self.comboBox_3.addItem('CANFD')
+            self.comboBox_3.setCurrentIndex(1)
+
+
         else:
             self.chooseBusType = 0
             self.lineEdit_6.setVisible(False)
@@ -291,24 +314,44 @@ class MainWindows(QMainWindow, Ui_MainWindow):
                 self.lineEdit_4.setText(
                     str(self.vectorAvailableConfigs[0]['vector_channel_config'].bus_params.can.tseg2))
 
+            # set send bus type comboBox
+            self.comboBox_3.clear()
+            self.comboBox_3.addItem('CAN')
+            self.comboBox_3.setCurrentIndex(0)
 
+
+
+    def set_send_msg_type(self):
+        if self.comboBox_3.currentText() == 'CANFD':
+            self.isotp_params['can_fd']=True
+        elif self.comboBox_3.currentText() == 'CAN':
+            self.isotp_params['can_fd']=False
 
     def bus_start(self):
         if self.is_start == 0:
+            self.vectorAvailableConfigs = VectorBus._detect_available_configs()
             VectorBus.set_application_config(app_name=self.appName, app_channel=self.channel_index,
                                              **self.vectorAvailableConfigs[self.channel_index])
-            try:
-                if self.vectorAvailableConfigs[self.channel_index]['vector_channel_config'].is_on_bus:
-                    self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName)
-                else:
-                    self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName,
-                                            fd=bool(self.chooseBusType),
-                                            **self.vectorChannelCanParams)
 
-            except can.CanInitializationError as e:
-                self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName)
+            # try:
+            #     if self.vectorAvailableConfigs[self.channel_index]['vector_channel_config'].is_on_bus:
+            #         self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName,fd=bool(self.chooseBusType))
+            #     else:
+            #         self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName,
+            #                                 fd=bool(self.chooseBusType),
+            #                                 **self.vectorChannelCanParams)
+            #
+            #
+            # except can.CanInitializationError as e:
+            #     self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName)
+            #
+            #     print('CanInitializationError:',e)
 
-                print('CanInitializationError:',e)
+            self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName,
+                                    fd=bool(self.chooseBusType),
+                                    **self.vectorChannelCanParams)
+
+
             # uds_config = udsoncan.configs.default_client_config.copy()
             canlister = can.Printer()
             self.notifier = can.Notifier(self.canbus, [])  # Add a debug listener that print all messages
@@ -376,7 +419,7 @@ class MainWindows(QMainWindow, Ui_MainWindow):
             print("错误:", e)
 
     def send_finshed(self, info):
-        # print(object)
+        print('send_finshed(self, info)')
         # self.pushButton_4.setDisabled(False)
         if info == True:
             self.textBrowser_2.insertPlainText('TX:' + self.uds_send_bytes.hex() + '\r')
@@ -385,6 +428,7 @@ class MainWindows(QMainWindow, Ui_MainWindow):
             self.pushButton_4.setDisabled(False)
 
     def rec_finshed(self, info):
+        print('rec_finshed')
         self.pushButton_4.setDisabled(False)
         if type(info) is bytes:
             self.textBrowser_2.insertPlainText('RX:' + info.hex() + '\r')
