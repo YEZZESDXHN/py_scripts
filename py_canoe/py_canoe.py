@@ -143,6 +143,8 @@ class MainWindows(QMainWindow, Ui_MainWindow):
 
     def init_ui(self):
 
+        self.pushButton_4.setDisabled(True)
+
         self.comboBox.activated.connect(self.ui_update_bus_type)
         self.comboBox_2.activated.connect(self.ui_update_bus_params)
         self.pushButton.clicked.connect(self.bus_start)
@@ -346,6 +348,15 @@ class MainWindows(QMainWindow, Ui_MainWindow):
             #     self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName)
             #
             #     print('CanInitializationError:',e)
+            if self.vectorAvailableConfigs[self.channel_index]['vector_channel_config'].is_on_bus:
+                if self.vectorAvailableConfigs[self.channel_index][
+                    'vector_channel_config'].bus_params.can.can_op_mode == \
+                        can.interfaces.vector.xldefine.XL_CANFD_BusParams_CanOpMode.XL_BUS_PARAMS_CANOPMODE_CAN20:
+                    self.chooseBusType = 0
+                    self.comboBox_2.setCurrentIndex(self.chooseBusType)
+                else:
+                    self.chooseBusType = 1
+                    self.comboBox_2.setCurrentIndex(self.chooseBusType)
 
             self.canbus = VectorBus(channel=self.channel_index, app_name=self.appName,
                                     fd=bool(self.chooseBusType),
@@ -379,6 +390,7 @@ class MainWindows(QMainWindow, Ui_MainWindow):
             self.lineEdit_7.setDisabled(True)
 
             self.resetCANparams()
+            self.pushButton_4.setDisabled(False)
 
 
         else:
@@ -399,6 +411,8 @@ class MainWindows(QMainWindow, Ui_MainWindow):
             self.lineEdit_9.setDisabled(False)
             self.lineEdit_5.setDisabled(False)
             self.lineEdit_7.setDisabled(False)
+
+            self.pushButton_4.setDisabled(True)
 
     def resetCANparams(self):
         self.vectorAvailableConfigs = VectorBus._detect_available_configs()
