@@ -93,12 +93,12 @@ class CANoeFDXserverThread(QThread):
 class CANoeFDXClientThread(QThread):
     canoe_status = pyqtSignal(object)
 
-    def __init__(self, to_canoe_data_queue,udp_socket,ip_port):
+    def __init__(self, to_canoe_data_queue,udp_socket,remote_ip_port):
         super().__init__()
         self.daemon = True
         self.to_canoe_data_queue = to_canoe_data_queue
         self.udp_socket=udp_socket
-        self.ip_port=ip_port
+        self.remote_ip_port=remote_ip_port
 
     def run(self):
         count = 0
@@ -119,7 +119,7 @@ class CANoeFDXClientThread(QThread):
                                             0x00, 0x4, 0x00, 0x01])
                     byte_array[12] = (count >> 8) & 0xFF
                     byte_array[13] = count & 0xFF
-                    self.udp_socket.sendto(byte_array, self.ip_port)
+                    self.udp_socket.sendto(byte_array, self.remote_ip_port)
                     self.canoe_status.emit(2)
                 elif data == 'stop canoe':
                     byte_array = bytearray([0x43, 0x41, 0x4E, 0x6F, 0x65, 0x46, 0x44, 0x58,
@@ -127,7 +127,7 @@ class CANoeFDXClientThread(QThread):
                                             0x00, 0x4, 0x00, 0x02])
                     byte_array[12] = (count >> 8) & 0xFF
                     byte_array[13] = count & 0xFF
-                    self.udp_socket.sendto(byte_array, self.ip_port)
+                    self.udp_socket.sendto(byte_array, self.remote_ip_port)
                     self.canoe_status.emit(1)
                 else:
 
@@ -146,7 +146,11 @@ class CANoeFDXClientThread(QThread):
                     byte_array[13] = count & 0xFF
                     # byte_array[14]=byte_array[14]+1
 
-                    self.udp_socket.sendto(byte_array, self.ip_port)
+                    self.udp_socket.sendto(byte_array, self.remote_ip_port)
+
+                    # 检查是否需要停止
+                    if QThread.currentThread().isInterruptionRequested():
+                        break
 
 
             except queue.Empty:
@@ -315,6 +319,9 @@ class BeagleThread(QThread):
                     byte_array = bytearray(data_mosi)
                     try:
                         self.to_canoe_data_queue.put(byte_array,block=False)
+                        # 检查是否需要停止
+                        if QThread.currentThread().isInterruptionRequested():
+                            break
                         # print(self.to_canoe_data_queue.qsize())
                     except queue.Full:
                         print("队列已满")
@@ -339,12 +346,12 @@ class MainWindows(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.canoe_cfg_path = r'C:/Workspace/02 INEOS/03 Project/CANoe_INEOS/INEOS_CANoe14_V1.0.cfg'
         self.canoe_status = 0
+        self.CANoeFDXstate=False
         self.init()
 
     def init(self):
         # 创建线程安全的队列
         self.to_canoe_data_queue = queue.Queue(maxsize=30)  # 需要处理的spi message id
-        # self.to_beagle_data_queue = queue.Queue()  # spi数据队列
 
         # 创建线程实例
         self.canoe_thread = CANoeThread(self.canoe_cfg_path)
@@ -363,7 +370,12 @@ class MainWindows(QMainWindow, Ui_MainWindow):
         self.lineEdit_SPI_Id.editingFinished.connect(self.get_spi_id)
         self.beagle_thread.spi_id_received.connect(self.beagle_thread.update_spi_message_id)
 
+
+        # 初始化ui
         self.lineEdit_SPI_Id.setText('0x41')
+        self.PB_StartCANoe.setDisabled(True)
+        self.PB_StartBeagle.setDisabled(True)
+        self.lineEdit_SPI_Id.setDisabled(True)
 
 
 
@@ -387,28 +399,68 @@ class MainWindows(QMainWindow, Ui_MainWindow):
 
 
     def creatCANoeFDX(self):
-        try:
-            self.client = socket.socket(socket.AF_INET,
-                                        socket.SOCK_DGRAM)  # udp协议
-            self.client.bind(('127.0.0.1', 2810))
-            self.ip_port = ('127.0.0.1', 2809)
+        if self.CANoeFDXstate==False:
+            try:
+
+                # 创建UDP套接字
+                self.local_socket = socket.socket(socket.AF_INET,
+                                            socket.SOCK_DGRAM)  # udp协议
+                self.local_socket.bind(('127.0.0.1', 2810))
+                self.remote_ip_port = ('127.0.0.1', 2809)
+
+                # 创建CANoe FDX客户端线程
+                self.canoe_FDX_client_thread = CANoeFDXClientThread(self.to_canoe_data_queue,self.local_socket,self.remote_ip_port)
+                self.canoe_FDX_client_thread.start()
+
+                # 创建CANoe FDX服务端端线程
+                self.canoe_FDX_server_thread = CANoeFDXserverThread(self.local_socket)
+                self.canoe_FDX_server_thread.start()
 
 
-            self.canoe_FDX_client_thread = CANoeFDXClientThread(self.to_canoe_data_queue,self.client,self.ip_port)
-            self.canoe_FDX_client_thread.start()
-            self.canoe_FDX_server_thread = CANoeFDXserverThread(self.client)
-            self.canoe_FDX_server_thread.start()
+                self.canoe_FDX_server_thread.spi_message_id.connect(self.beagle_thread.update_spi_message_id)
+                self.canoe_FDX_server_thread.spi_message_id.connect(self.update_lineEdit_SPI_Id)
+
+                self.canoe_FDX_client_thread.canoe_status.connect(self.set_canoe_status)
+                self.canoe_thread.canoe_status.connect(self.set_canoe_status)
 
 
-            self.canoe_FDX_server_thread.spi_message_id.connect(self.beagle_thread.update_spi_message_id)
-            self.canoe_FDX_server_thread.spi_message_id.connect(self.update_lineEdit_SPI_Id)
+                # 设置ui
+                self.PB_StartCANoe.setDisabled(False)
+                self.PB_StartBeagle.setDisabled(False)
+                self.lineEdit_SPI_Id.setDisabled(False)
 
-            self.canoe_FDX_client_thread.canoe_status.connect(self.set_canoe_status)
-            self.canoe_thread.canoe_status.connect(self.set_canoe_status)
-        except Exception as e:
-            print(f"Error in UDP server: {e}")
+                self.lineEdit_local_ip.setDisabled(True)
+                self.lineEdit_remote_ip.setDisabled(True)
+                self.spinBox_local_port.setDisabled(True)
+                self.spinBox_remote_port.setDisabled(True)
+
+                self.PB_CANoeFDX.setText('Stop CANoeFDX')
+                self.CANoeFDXstate=True
 
 
+            except Exception as e:
+                print(f"Error in UDP server: {e}")
+
+        else:
+
+            self.beagle_thread.quit()
+            self.canoe_FDX_server_thread.terminate()
+            self.canoe_FDX_client_thread.quit()
+
+            self.local_socket.close()
+
+            # 设置ui
+            self.PB_StartCANoe.setDisabled(True)
+            self.PB_StartBeagle.setDisabled(True)
+            self.lineEdit_SPI_Id.setDisabled(True)
+
+            self.lineEdit_local_ip.setDisabled(False)
+            self.lineEdit_remote_ip.setDisabled(False)
+            self.spinBox_local_port.setDisabled(False)
+            self.spinBox_remote_port.setDisabled(False)
+
+            self.PB_CANoeFDX.setText('Start CANoeFDX')
+            self.CANoeFDXstate = False
 
 
 

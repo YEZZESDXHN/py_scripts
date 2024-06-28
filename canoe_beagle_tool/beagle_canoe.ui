@@ -17,9 +17,9 @@
    <widget class="QPushButton" name="PB_StartBeagle">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>10</y>
-      <width>75</width>
+      <x>60</x>
+      <y>180</y>
+      <width>111</width>
       <height>23</height>
      </rect>
     </property>
@@ -40,8 +40,8 @@
    <widget class="QPushButton" name="PB_StartCANoe">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>110</y>
+      <x>60</x>
+      <y>300</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -53,8 +53,8 @@
    <widget class="QPushButton" name="PB_OpenCANoe">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>110</y>
+      <x>10</x>
+      <y>10</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -66,7 +66,7 @@
    <widget class="QLineEdit" name="lineEdit_SPI_Id">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>190</x>
       <y>180</y>
       <width>113</width>
       <height>20</height>
@@ -76,14 +76,110 @@
    <widget class="QPushButton" name="PB_CANoeFDX">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>10</y>
-      <width>75</width>
+      <x>300</x>
+      <y>90</y>
+      <width>141</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>CANoeFDX</string>
+     <string>Start CANoeFDX</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_local_ip">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>60</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>127.0.0.1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>local:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_remote_ip">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>90</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>127.0.0.1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>remote:</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_local_port">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>60</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="keyboardTracking">
+     <bool>true</bool>
+    </property>
+    <property name="maximum">
+     <number>99999</number>
+    </property>
+    <property name="value">
+     <number>2810</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_remote_port">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>90</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="keyboardTracking">
+     <bool>true</bool>
+    </property>
+    <property name="maximum">
+     <number>99999</number>
+    </property>
+    <property name="value">
+     <number>2809</number>
     </property>
    </widget>
   </widget>
@@ -93,7 +189,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>26</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
