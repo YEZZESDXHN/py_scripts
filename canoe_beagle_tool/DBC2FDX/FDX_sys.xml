@@ -1,0 +1,1023 @@
+<?xml version="1.0" ?>
+<systemvariables version="4">
+  <namespace name="" comment="" interface="">
+    <namespace name="FDX" comment="" interface="">
+      <namespace name="PDCM51_0x101" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_FAWhlTqMax" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_MotRegenTrqInD_TotalVld" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_vehicleTorqueMin" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_RAWhlTqMax" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_MotRegenTrqInD_Total" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_epbReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_overrideSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_FAWhlTqReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_FAWhlTqActValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_FAWhlTqReqValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_FAWhlTqAct" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_frontMotorRpmValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_frontMotorRpm" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_RAWhlTqReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_RAWhlTqActValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_RAWhlTqReqValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_RAWhlTqAct" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_rearMotRpmValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_rearMotRpm" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_CR_TorReq_Front" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_CR_TorReq_Rear" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_AccelPedal_Virtual" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_AccelPedal_Virtual_Valid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_FAWhlTqRegenMax" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_RAWhlTqRegenMax" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_RAWhlTqRegenMaxValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_FAWhlTqRegenMaxValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter101" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum101" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM24_0xb9" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_EngIdleTgtSpd" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_ClutchCommandTransferTorque" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_ClutchCommand" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVCO_ActiveDischarge_Req" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVCO_EmergencyShutdown_Req" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_Max_Voltage" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_Min_Voltage" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_DrivingCycle" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_Dcy_valid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter0B9" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum0B9" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="GW_EBS1_0x3e3" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_U_BATT" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM_OBD_0x2a5" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_OBD_FaultClrInhibit" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_OBD_PDTCClrSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_OBD_DenoSpecValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_OBD_DenoSpecial" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_OBD_DenoGenValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_OBD_DenoGeneral" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_OBD_WarmCycleSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_CatHeatAllow" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_GPFUdsRgnAcv" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_AccelPedal_Position" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM61_0x31b" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_CruiseCtrlState" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter31B" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="CheckSum31B" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM1_0x285" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_SOC" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM3_0x36a" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_TowMode" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM5_0x2aa" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVCM_ChargeState" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM6_0x2ae" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVCM_Plug_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM10_0x2c8" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_actualGearValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_targetGearValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_actualGear" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_targetGear" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_AccelPedal_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_VehicleSpeed" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_APADrvAst_allow" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_ACCDrvAst_allow" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_DriveReady" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_EVMode_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_AccelPedal_Valid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_BrakePedal_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HV_Network_active" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HV_Network_Fault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_BrakePedal_Valid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_driveMode" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter2C8" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum2C8" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IPB1_0x232" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_torqueIncrReqFront" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_torqueIncrReqFrontSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_torqueRedReqFrontSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_RegenTrqDistbnMaxFA" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_torqueRedReqFront" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_CR_TorAllowed_FrontSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_RollerBench_Mode" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_CR_TorAllowed_Front" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_CR_TorAllowed_Rear" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_torqueIncrReqRear" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_torqueIncrReqRearSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_torqueRedReqRearSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_RegenTrqDistbnMaxRA" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_torqueRedReqRear" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_CR_TorAllowed_RearSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_rbsMbRgnTgTotalValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_rbsMbRgnTgt_Total" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter232" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum232" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IPB4_0x122" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelSpeedRL" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelSpeedRLValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelSpeedRR" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelSpeedRRValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter122" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum122" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IPB5_0x142" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelSpeedFL" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelSpeedFLValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelSpeedFR" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelSpeedFRValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter142" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum142" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IPB6_0x102" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_abpAvailable" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_abpActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_abaAvailable" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_abaActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_cddTempOff" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_cddError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_cddAvailable" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_cddActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_awbAvailable" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_awbActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_aebAvailable" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_aebActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter102" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum102" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IPB7_0xa0" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_vehicleSpeed" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_vehicleSpeedValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_absFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_absActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_hdcAvailable" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_cdpAvailable" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_cdpActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_avhAvailable" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_avhSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_tcsActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_vdcActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_brakelightRequest" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_ModeSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_vehicleStandstillValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_vehicleStandstill" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_epbRequest" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_ESCoffSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_ebd_active" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_ebdFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_hhcAvailable" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_hhcActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_hdcSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_esclampdisplay" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_dtcActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_hba_active" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_hazErrorSt" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_haz_active" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_escFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_HRBActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_BDWActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter0A0" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum0A0" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IPB8_0x2a2" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_vlcTorqReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_vlcAvalible" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_vlcError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_vlcTorqReqActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_vlcInterTargetAx" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_vlcActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter2A2" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum2A2" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IPB9_0x272" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_sumOfEdgeFLWSS" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_sumOfEdgeFRWSS" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_sumOfEdgeFLWSSValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_sumOfEdgeFRWSSValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelDirectionFLValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelDirectionFRValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelDirectionFL" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelDirectionFR" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_vehicleDirection" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter272" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum272" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IPB10_0x282" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_sumOfEdgeRLWSS" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_sumOfEdgeRRWSS" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_sumOfEdgeRLWSSValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_sumOfEdgeRRWSSValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelDirectionRLValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelDirectionRRValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelDirectionRL" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_wheelDirectionRR" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter282" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum282" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IPB12_0x214" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_SystemStatus" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_brakeFluidWarning" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_brakePedalStatus" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_TwoFootDriveWarning" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_FWAWarning" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_BrkFricTqTotAtWhls" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_DSTSteeringTorqOffset" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_CSTStatus" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_DSTStatus" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_BrkFricTqTotAtWhlsInvalid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_SCMActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_SCMAvailable" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_EBPActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter214" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum214" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IPB13_0x216" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_SimulatorPressure" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_PlungerPressure" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_PlungerPressureStatus" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_SimulatorPressureStatus" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_InputRodStrokeStatus" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ipb_InputRodStroke" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter216" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum216" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IPB_OBD_0x217" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_OBD_Lamp_Req" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter217" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum217" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IPB_apaSet_0x242" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_LSMMode" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_LSMCtrlFaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_ParkLSMAvl" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_LSMEmergencyAvl" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_LSMComfortAvl" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_LSMHandshake" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_LSMBrakeMode" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_ActiveHold" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_targetGearReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_apa_cddActive" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter242" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum242" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="EPBM_state_0x12a" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBM_TextDisplay" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBM_ParkingLamp" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBM_FaultLamp" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBM_CDPRequest" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBM_BrakeSwInfo" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBM_Sts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBM_TextDisplayOnIVI" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBM_CDPAx" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBM_CDPAxValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBM_FailStatus" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBM_brakelightRequest" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPB_MReqfailstatus" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBM_Sts_LR" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter12A" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum12A" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="EPS_state_0x124" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPS_STR_TQR_SEN" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPS_TOI_ACTIVE" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPS_STR_TQR_SEN_sts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPS_Ctrl_AVAILABLE" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="eps_warningLamp" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPS_TOI_TorFeedback" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPS_TOI_FAULT" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPS_LDW_Vibration_status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPS_ApaControlFaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPS_ApaControlSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPS_ModeFb" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter124" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum124" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="EPS_SAS_0x144" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="eps_sasSteeringAngle" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="eps_pinionAngle" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="eps_sasSteeringAngleSpd" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="eps_sasSteeringAngleSpdValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="eps_calibratedSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="eps_sasSteeringAngleValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="eps_sasFailure" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter144" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum144" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IVI_chassisSet_0x1be" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_CSTOnOffSet" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_hdcOnOffSet" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_escOffSw" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_epsModeSet" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_IPBModeSet" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_AVHOnOffSet" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_EPBSwitchSet" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IC_state_0x2fe" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ic_totalMileage" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ic_totalMileageValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter2FE" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum2FE" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="TBOX_engineOFF_0x52" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Tbox_engOffTime" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Tbox_engOffTimeValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="AC1_0x36b" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AC_ambientTempValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AC_ambientTemp" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="IVI_timeAndGPS_0x3fe" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_timeInfoSecond" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_timeInfoMinute" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_timeInfoHour" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_timeInfoDay" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_timeInfoMonth" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_timeInfoYear" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ivi_timeValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="OIB_BCM_State1_0x3e7" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="DCU_FL_doorFLSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_WiperLogicStallSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter3E7" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum3E7" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="GW_LIN_CHA_0x3ea" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="rls_WiperSpeed" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="GW_BCM_DCU_CHA_0x2af" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="bcm_frontWiperSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="BCM_peps_0x2c1" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="bcm_pepsPowerMode" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="bcm_ble_response" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="bcm_remoteMode" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="bcm_tbox_response" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="bcm_12VBatterySOC" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="TBOX_VehicleMode_0x4fe" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="tbox_vehicleMode" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter4FE" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum4FE" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM_IVI_0x31d" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_ExhibitionSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="MCUF1_0xa1" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_ActualTorque" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_MotorSpdValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_MotorSpd" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_MotorPower" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_SelfheatingMode" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_SelfheatingAllow" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter0A1" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum0A1" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="MCUF2_0xa2" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Current_HV" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_MotorMaxSpd" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_TMReq_ASC" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_AS_Activ" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Fault_ShutOff_HV_Req" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Fault_ASC" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Actual_Voltage" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_State" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter0A2" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum0A2" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="MCUF3_0x30b" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_MotorMaxPositiveTorque" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_MotorMinNegativeTorque" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_MaxTorque_total" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_MinTorque_total" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_RollingCount_20B" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Checksum_20B" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="MCUF4_0x351" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_ControllerTemp" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_MotorTemp" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Motor_Current_Phase_A" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Motor_Current_Phase_B" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Motor_Current_Phase_C" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter351" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum351" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="MCUF6_0x315" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Status_ActiveDischarge" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Fault_ActiveDischarge" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Fault_PowerDerating" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_FaultLamp_Req" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_OBD_Lamp_Req" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Fault_Code" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_PerInd_MaxPower" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_PerInd_MaxTorque" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_ToltalFaultNum" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_MotorStatus" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter315" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum315" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="MCUF8_0x415" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_RTM_WarnComm" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_RTM_OverTemp_EM" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_RTM_OverTemp_MCU" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_RTM_OverSpeed" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Vehicle_Type" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_HW_Version" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Efficiency" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_Derating_OverTemp" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_RTM_OverCurrent" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_HV_Voltg_Free" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_SW_Minor_Version" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_SW_Major_Version" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter415" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum415" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM21_0xb2" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_MCUF_AntiJerk" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_MCUF_TorqueReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_MCUF_SpeedReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_GCU_MaxPower_D" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_SelfheatingReq_MCUF" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVCO_MCUF_StateCmd" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter0B2" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum0B2" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM22_0xb5" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_MCUR_AntiJerk" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_MCUR_TorqueReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_MCUR_SpeedReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_GCU_MaxPower_G" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVCO_MCUR_StateCmd" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter0B5" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum0B5" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM30_0x3d7" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_MCUF_MaxPower_D" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_MCUF_MaxPower_G" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_MCUR_MaxPower_D" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_MCUR_MaxPower_G" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter3D7" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum3D7" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM38_0x46f" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="TM_Temp_senser_1" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="TM_Temp_senser_2" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter46F" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum46F" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM_IC_ACU_0x202" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ic_totalMileage_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LgtA_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LgtAValSts_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ic_totalMileageValid_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBS_FaultLamp_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBS_Sts_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPBS_BrakeSwInfo_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter202" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum202" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM_ACU_EPS_0xb3" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_crashOutputStsValid_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_crashOutputSts_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="eps_sasSteeringAngle_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="eps_sasSteeringAngleValid_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter0B3" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum0B3" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM_Body_IC_0x3db" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="bcm_hoodSts_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_refuelReq_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="bcm_fuelCapSts_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_U_BATT_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ic_oilPercent_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IC_OilSensorResistance_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ic_oilPercentFail_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AC_WarmWindReq_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AC_ambientTempValid_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AC_Warmvalvestate_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AC_ambientTemp_s" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="PDCM_SelfHeat_0x356" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="PDCM_SelfheatingMode_0x356" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="MCUF_SelfHeat1_0x313" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_UdFreq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_UdVolt" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="MCUF_SelfHeat2_0xa4" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_BusCurrent" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_BusFreq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="OIB_VIUF_PTC_0x25_0x494" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_EnableReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_InitReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_ClearFaultReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_PwrLimit" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_TempTgt" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_PwrRatReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="VIUF_OIB_PTC_0x26_0x496" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_CurPwr" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_CurHVol" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_CurTemp" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_InitSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_SigWarn" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_Sigfault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_SwVersion" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Cptc_HwVersion" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="OIB_VIUF_AGS_0x0E_0x479" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_Position_Cmd" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_CalbIsEnbld_Cmd" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_BoostTrq_Cmd" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_HldgCurStg_Cmd" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="VIUF_OIB_AGS_0x0F_0x47a" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_CurrentPos_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_OverTvlBrkg_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_SnsrError_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_CalbIsOn_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_CalbIsReq_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_UnderOverVoltError_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_BlockError_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_ElectricalError_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_OverTemError_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_BoostTrq_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_HldgCurStg_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AGM1_LIN_ErrorStatus" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="OIB_VIUF_Blower_0x20_0x485" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_EmgRunThldSelect" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_EmgRunThldReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_CrashEmgOff" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_NodeSelector" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_MaxCurrentLimReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_EmgRunRestartReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_RotDirReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_BuildUpRampReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_RPMSetpointReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_EmgRunSetpointReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="VIUF_OIB_Blower_0x25_0x486" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_Current" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_RPM" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_InternalTemp" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_SupplyVoltage" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_RsErr" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_InternalState" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_CurrentLimitState" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_VoltageState" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_ShortCircuitState" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_BlockedState" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_TempDeratState" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_RotDirectionState" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_InternalErrorState" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_VoltageDeratingState" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_WindmillingState" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Blower_WakeupReason" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="OIB_VIUF_HVEDC_0x1A_0x46a" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_Target_Speed" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_Target_PwrLim" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_Target_Enable" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="VIUF_OIB_HVEDC_0x1B_0x46b" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_DC_Current" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_Phase_Current" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_Temperature" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_Actual_Speed" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_DC_Voltage" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_Power" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="VIUF_OIB_HVEDC_0x1C_0x46d" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_Lv_VoltageError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_Hv_OverVoltageError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_Hv_UnderVoltageError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_StallError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_ECU_InternalError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_Status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_OvertemperatureError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_StartupError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_DriverError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_CurrentSamplingError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_TemperatureSensorError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_OverpPhaseCurrentError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_RspError" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_HWVer" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Comp_SWVer" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="VIU_OIB_EBS_0x34_0x1e1" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_U_BATT_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_I_RANGE_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_I_BATT_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_T_BATT_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_IBATT_QUIESCNET_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_Status_Current_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_Status_Voltage_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_Status_Temp_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_ERROR_Calib_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_ERROR_IDENT_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_EBS_ResponseError_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_FLAG_INCONSISTENCY_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="VIU_OIB_EBS_0x35_0x1e4" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_SOC_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_SOH_SUL_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_SOFV_StopEnable_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_SOFV_Restart_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_SOH_LAM_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_SOH_COR_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_SOC_STATE_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_SOH_SUL_STATE_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_SOFV_StopEnable_STATE_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_SOFV_Restart_STATE_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_SOH_LAM_STATE_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_SOH_COR_STATE_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="VIU_OIB_EBS_0x36_0x1e7" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_Q_Charge_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="ebs_Q_Discharge_60" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="HCM_L_0x100" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftLowBeamFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftLowBeamSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_middleLeftPositionLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_middleLeftPositionLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftDRLFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftDRLSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftpositionLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftpositionLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftTurnLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftTurnLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_hcmHeightSetLt" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftHighBeamFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftHighBeamSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_middleRightPositionLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_middleRightPositionLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_leftADBModeSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftWelcomeLightSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftHPPWelLightSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_WelcomeMusicEnable" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftAFSFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftAutoHeightAdjustFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_LeftMatrixLEDunitFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter100" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum100" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="HCM_R_0x110" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightLowBeamFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightLowBeamSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightDRLFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightDRLSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightpositionLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightpositionLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightTurnLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightTurnLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_hcmHeightSetRt" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightHighBeamFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightHighBeamSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_rightADBModeSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightWelcomeLightSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightHPPWelLightSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightAFSFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightAutoHeightAdjustFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_RightMatrixLEDunitFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter110" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum110" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="RLLM_Fix_0x107" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_LeftStopLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_LeftTurnLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_LeftPositionLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_LeftPositionLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_LeftHPPWelLightSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_LeftWelcomeLightSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_LeftStopLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_LeftTurnLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_HighStopLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_HighStopLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter107" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum107" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="RLM_Move_0x108" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_MidRightTurnLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_MidStopLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_MidLeftTurnLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_MidStopLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_MidLeftTurnLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_MidpositionLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_MidpositionLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_MidRightTurnLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_ReverseLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_ReversingLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_WelcomeLightSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_HPPWelLightSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter108" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum108" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="RRLM_Fix_0x117" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_RightStopLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_RightTurnLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_RearfogLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_RearfogLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_RightPositionLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_RightPositionLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_RightHPPWelLightSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_RightWelcomeLightSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_RightStopLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_RightTurnLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_LicenseLampFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_LicenseLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter117" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum117" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="BCM_state_0x2a1" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_FLdrlReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_RMPosLampReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_FLPosLampReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_ADBModeReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_EXLHeightAdjtReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_HighBeamReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_LowBeamReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_FRPosLampReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_FRdrlReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_RightTurnLampReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_LeftTurnLampReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_RearfoglampReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_turnLampSerialReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_turnLampFlickerReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_RRPosLampReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_RLPosLampReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_LicenseLampReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_StoplampReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_ReversinglampReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter2A1" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum2A1" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="BCM_state2_0x3c0" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_HPPWelLightReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_WelcomeLightReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_RearAtmoLampReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_AFSModeReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="bcm_backlightadjust" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BCM_ApproachLightReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="POT_state_0x394" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_tailgateOpenSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="OIB_VIU_Cmd_0x195" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Gls_Evl_Req" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FrontRow_Evl_Req" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HeatingPump_Frequency_Adjust" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HeatingPump_Dutycycle_Adjust" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="SetCoolingFanPWMCtrl" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="SetHVBattOIBPumpPositionCmd" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="SetLTPumpPositionCmd" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="SetCoolingFanPWMFrequency" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="SetHVBattOIBPumpPWMFrequency" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="SetLTPumpPWMFrequency" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FrontWiperServicePosReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FrontWasherReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FrontWiperActionReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FrontWiperSpeedReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="OHX_EXV_Position_Req" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FR_EXV_Position_Req" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BC_EXV_Position_Req" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve5_PositionReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve6_PositionReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve5_InitialReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve6_InitialReq" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter195" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum195" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="VIU_F_AC_State1_0x32d" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HighPressure_Advalue" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LowPressure_Advalue" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Condenser_Temp_Advalue" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LowPressure_Temp_Advalue" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LowPres_TempSensor_FaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Condenser_TempSensor_FaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LowPressure_Sensor_FaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HighPressure_Sensor_FaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="OHX_TempSensor_Advalue" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Gls_Evl_OffOn_Sts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Gls_Evl_FaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FrontRow_Evl_OffOn_Sts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FrontRow_Evl_FaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HeatingPump_FaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="OHX_TempSensor_FaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="OHX_EXV_FaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HeatingPump_PWM_Feedback" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="OHX_EXV_PosFeedback" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FR_EXV_FaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FR_EXV_PosFeedback" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve5_Sts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BC_EXV_FaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="BC_EXV_PosFeedback" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve6_Sts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve5_Position" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve6_Position" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="VIU_F_VCU_State1_0x31c" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FrontMcuInletCoolantTemp" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="CoolingFanPWMSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVBattOIBPumpPos" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LTPumpPosition" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FroMcuInletCoSenShToBatOpFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve4InletCoolantTempSensrFaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FrontMcuInletCoolantTempSensrFaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LTPumpFaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVBattOIBPumpFaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="CoolingFanFaultSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve4InletCoolantTemp" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FroMcuInletCoSenShToGndFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FroMcuInletCoSenVotTooLowFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FroMcuInletCoSenVotTooHiFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve4InletCoSenShToBatOpFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve4InletCoSenShToGndFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve4InletCoSenVotTooLowFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Valve4InletCoSenVotTooHiFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LTPumpCtrlCirOpenFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LTPumpCtrlCirShToGndFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LTPumpCtrlCirShToBatFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LTPumpOverTempFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LTPumpOverCurOrStallFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LTPumpDryRunFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVBattOIBPumpCtrlCirOpenFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVBattOIBPumpCtrlShToGndFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVBattOIBPumpCtrlShToBatFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVBattOIBPumpCtrlDryRunFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVBattOIBPumpCtrlStallOverCurr" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVBattOIBPumpOverTemFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HVBattOIBPumpLoseSpeedFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="CoolingFanCtrlCirOpenFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="CoolingFanCtrlCirShToBatFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="CoolingFanCtrlCirShToGndFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="CoolingFanStallFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="CoolingFanOverCurrentFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="CoolingFanInternalFault" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter31C" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum31C" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="VIU_F_BCM_State1_0x36c" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FrontWasherSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FrontWiperServicePosSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FrontWiperActionSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FrontWiperSpeedSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="WiperZeroPosSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="OIB_BCM_Cmd_0x366" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_OnOffSet_366" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_PositionStsSet_366" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="POT_state1_0x37c" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_OIB_tailgateOpenSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_HallCountErrSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_HallShortCircuitLSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_HallShortCircuitRSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_ManuelLckErrSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_MotorErrFSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_MotorErrRSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_OverVoltageDetectedSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_UnderVoltageDetectedSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_workingSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_AssistantSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_POTInsButtonSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_POTOtsButtonSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="pot_PositionSetSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="ACU_IMU_1_0x3d" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LatA" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="YawRateValSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LatAValSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="YawRate" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter03D" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum03D" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="ACU_IMU_2_0x3e" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LgtA" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="AxAyYrsCalSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="LgtAValSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter03E" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum03E" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="ACU_state_0x380" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_crashOutputStsValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_warningLampSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_secondMiddleSeatBeltSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_secondLeftSeatBeltSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_passengerAirbagSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_passengerSeatBeltStsValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_passengerSeatBeltSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_driverSeatBeltStsValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_driverSeatBeltSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_secondRightSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_secondMiddleSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_secondLeftSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_passengerSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_secondRightSeatBeltSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="acu_crashOutputSts" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter380" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum380" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="GSM1_0x309" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="gsm_gearSelectorPosValid" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="gsm_gearSelectorPos" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="gsm_faultLevel" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="swm_epb_switch_status" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="swm_epb_switch" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="gsm_warnInformation" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="gsm_fault_code" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="gsm_knob_position" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RollingCounter309" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="Checksum309" comment="" bitcount="32" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_FUN_0x7df" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="FUN_DiagReq" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_EPB_CHA_0x708" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPB_DiagReq" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagResp_EPB_CHA_0x788" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPB_DiagResp" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_EPS_0x744" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPS_DiagReq" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagResp_EPS_0x7c4" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="EPS_DiagResp" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_IPB_0x712" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_DiagReq" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagResp_IPB_0x792" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_DiagResp" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_IPB_OBD_0x7e7" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_DiagReq_OBD" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagResp_IPB_OBD_0x7ef" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="IPB_DiagResp_OBD" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_MCUF_0x7e3" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_DiagReq" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagResp_MCUF_0x7eb" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="MCUF_DiagResp" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_HCM_L_0x721" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_L_DiagReq" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagResp_HCM_L_0x7a1" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_L_DiagResp" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_HCM_R_0x720" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_R_DiagReq" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagResp_HCM_R_0x7a0" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="HCM_R_DiagResp" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_RLLM_Fix_0x72f" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLLM_Fix_DiagReq" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagResp_RLLM_Fix_0x7af" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLLM_Fix_DiagResp" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_RLM_Move_0x71d" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_Move_DiagReq" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagResp_RLM_Move_0x79d" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RLM_Move_DiagResp" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_RRLM_Fix_0x71f" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RRLM_Fix_DiagReq" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagResp_RRLM_Fix_0x79f" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="RRLM_Fix_DiagResp" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_VIU_F_0x724" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="VIU_F_DiagReq" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagResp_VIU_F_0x7a4" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="VIU_F_DiagResp" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_GL_0x73e" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="GL_DiagReq" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagResp_GL_0x7be" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="GL_DiagResp" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagReq_POT_0x704" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="POT_DiagReq" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+      <namespace name="DiagResp_POT_0x784" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="true" valueSequence="false" unit="" name="POT_DiagResp" comment="" bitcount="64" isSigned="false" encoding="65001" type="int"/>
+      </namespace>
+    </namespace>
+  </namespace>
+</systemvariables>

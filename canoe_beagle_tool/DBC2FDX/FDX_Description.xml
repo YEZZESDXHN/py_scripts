@@ -1,0 +1,2724 @@
+<?xml version="1.0" ?>
+<canoefdxdescription version="1.0">
+  <datagroup groupID="257" size="44">
+    <identifier>PDCM51 257</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="PDCM_FAWhlTqMax" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="PDCM_MotRegenTrqInD_TotalVld" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="3" size="2" type="uint16">
+      <sysvar name="PDCM_vehicleTorqueMin" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="5" size="2" type="uint16">
+      <sysvar name="PDCM_RAWhlTqMax" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="7" size="2" type="uint16">
+      <sysvar name="PDCM_MotRegenTrqInD_Total" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="PDCM_epbReq" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="PDCM_overrideSts" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="11" size="2" type="uint16">
+      <sysvar name="PDCM_FAWhlTqReq" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="PDCM_FAWhlTqActValid" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="PDCM_FAWhlTqReqValid" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="15" size="2" type="uint16">
+      <sysvar name="PDCM_FAWhlTqAct" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="17" size="1" type="uint8">
+      <sysvar name="PDCM_frontMotorRpmValid" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="18" size="2" type="int16">
+      <sysvar name="PDCM_frontMotorRpm" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="20" size="2" type="uint16">
+      <sysvar name="PDCM_RAWhlTqReq" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="22" size="1" type="uint8">
+      <sysvar name="PDCM_RAWhlTqActValid" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="23" size="1" type="uint8">
+      <sysvar name="PDCM_RAWhlTqReqValid" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="24" size="2" type="uint16">
+      <sysvar name="PDCM_RAWhlTqAct" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="26" size="1" type="uint8">
+      <sysvar name="PDCM_rearMotRpmValid" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="27" size="2" type="int16">
+      <sysvar name="PDCM_rearMotRpm" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="29" size="2" type="uint16">
+      <sysvar name="PDCM_CR_TorReq_Front" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="31" size="2" type="uint16">
+      <sysvar name="PDCM_CR_TorReq_Rear" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="33" size="2" type="uint16">
+      <sysvar name="PDCM_AccelPedal_Virtual" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="35" size="1" type="uint8">
+      <sysvar name="PDCM_AccelPedal_Virtual_Valid" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="36" size="2" type="uint16">
+      <sysvar name="PDCM_FAWhlTqRegenMax" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="38" size="2" type="uint16">
+      <sysvar name="PDCM_RAWhlTqRegenMax" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="40" size="1" type="uint8">
+      <sysvar name="PDCM_RAWhlTqRegenMaxValid" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="41" size="1" type="uint8">
+      <sysvar name="PDCM_FAWhlTqRegenMaxValid" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="42" size="1" type="uint8">
+      <sysvar name="RollingCounter101" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+    <item offset="43" size="1" type="uint8">
+      <sysvar name="Checksum101" namespace="FDX::PDCM51" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="185" size="15">
+    <identifier>PDCM24 185</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="PDCM_EngIdleTgtSpd" namespace="FDX::PDCM24" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="PDCM_ClutchCommandTransferTorque" namespace="FDX::PDCM24" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="PDCM_ClutchCommand" namespace="FDX::PDCM24" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="HVCO_ActiveDischarge_Req" namespace="FDX::PDCM24" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="HVCO_EmergencyShutdown_Req" namespace="FDX::PDCM24" value="raw"/>
+    </item>
+    <item offset="7" size="2" type="uint16">
+      <sysvar name="PDCM_Max_Voltage" namespace="FDX::PDCM24" value="raw"/>
+    </item>
+    <item offset="9" size="2" type="uint16">
+      <sysvar name="PDCM_Min_Voltage" namespace="FDX::PDCM24" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="PDCM_DrivingCycle" namespace="FDX::PDCM24" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="PDCM_Dcy_valid" namespace="FDX::PDCM24" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="RollingCounter0B9" namespace="FDX::PDCM24" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="Checksum0B9" namespace="FDX::PDCM24" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="995" size="2">
+    <identifier>GW_EBS1 995</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="ebs_U_BATT" namespace="FDX::GW_EBS1" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="677" size="11">
+    <identifier>PDCM_OBD 677</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="PDCM_OBD_FaultClrInhibit" namespace="FDX::PDCM_OBD" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="PDCM_OBD_PDTCClrSts" namespace="FDX::PDCM_OBD" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="PDCM_OBD_DenoSpecValid" namespace="FDX::PDCM_OBD" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="PDCM_OBD_DenoSpecial" namespace="FDX::PDCM_OBD" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="PDCM_OBD_DenoGenValid" namespace="FDX::PDCM_OBD" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="PDCM_OBD_DenoGeneral" namespace="FDX::PDCM_OBD" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="PDCM_OBD_WarmCycleSts" namespace="FDX::PDCM_OBD" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="PDCM_CatHeatAllow" namespace="FDX::PDCM_OBD" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="PDCM_GPFUdsRgnAcv" namespace="FDX::PDCM_OBD" value="raw"/>
+    </item>
+    <item offset="9" size="2" type="uint16">
+      <sysvar name="PDCM_AccelPedal_Position" namespace="FDX::PDCM_OBD" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="795" size="3">
+    <identifier>PDCM61 795</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="PDCM_CruiseCtrlState" namespace="FDX::PDCM61" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="RollingCounter31B" namespace="FDX::PDCM61" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="CheckSum31B" namespace="FDX::PDCM61" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="645" size="2">
+    <identifier>PDCM1 645</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="PDCM_SOC" namespace="FDX::PDCM1" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="874" size="1">
+    <identifier>PDCM3 874</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="PDCM_TowMode" namespace="FDX::PDCM3" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="682" size="1">
+    <identifier>PDCM5 682</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="HVCM_ChargeState" namespace="FDX::PDCM5" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="686" size="1">
+    <identifier>PDCM6 686</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="HVCM_Plug_Status" namespace="FDX::PDCM6" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="712" size="20">
+    <identifier>PDCM10 712</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="PDCM_actualGearValid" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="PDCM_targetGearValid" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="PDCM_actualGear" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="PDCM_targetGear" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="4" size="2" type="uint16">
+      <sysvar name="PDCM_AccelPedal_Status" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="6" size="2" type="uint16">
+      <sysvar name="PDCM_VehicleSpeed" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="PDCM_APADrvAst_allow" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="PDCM_ACCDrvAst_allow" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="PDCM_DriveReady" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="PDCM_EVMode_Status" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="PDCM_AccelPedal_Valid" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="PDCM_BrakePedal_Status" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="HV_Network_active" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="15" size="1" type="uint8">
+      <sysvar name="HV_Network_Fault" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="16" size="1" type="uint8">
+      <sysvar name="PDCM_BrakePedal_Valid" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="17" size="1" type="uint8">
+      <sysvar name="PDCM_driveMode" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="18" size="1" type="uint8">
+      <sysvar name="RollingCounter2C8" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+    <item offset="19" size="1" type="uint8">
+      <sysvar name="Checksum2C8" namespace="FDX::PDCM10" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="562" size="26">
+    <identifier>IPB1 562</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="IPB_torqueIncrReqFront" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="IPB_torqueIncrReqFrontSts" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="IPB_torqueRedReqFrontSts" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="IPB_RegenTrqDistbnMaxFA" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="5" size="2" type="uint16">
+      <sysvar name="IPB_torqueRedReqFront" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="IPB_CR_TorAllowed_FrontSts" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="IPB_RollerBench_Mode" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="9" size="2" type="uint16">
+      <sysvar name="IPB_CR_TorAllowed_Front" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="11" size="2" type="uint16">
+      <sysvar name="IPB_CR_TorAllowed_Rear" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="13" size="2" type="uint16">
+      <sysvar name="IPB_torqueIncrReqRear" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="15" size="1" type="uint8">
+      <sysvar name="IPB_torqueIncrReqRearSts" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="16" size="1" type="uint8">
+      <sysvar name="IPB_torqueRedReqRearSts" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="17" size="1" type="uint8">
+      <sysvar name="IPB_RegenTrqDistbnMaxRA" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="18" size="2" type="uint16">
+      <sysvar name="IPB_torqueRedReqRear" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="20" size="1" type="uint8">
+      <sysvar name="IPB_CR_TorAllowed_RearSts" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="21" size="1" type="uint8">
+      <sysvar name="IPB_rbsMbRgnTgTotalValid" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="22" size="2" type="uint16">
+      <sysvar name="IPB_rbsMbRgnTgt_Total" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="24" size="1" type="uint8">
+      <sysvar name="RollingCounter232" namespace="FDX::IPB1" value="raw"/>
+    </item>
+    <item offset="25" size="1" type="uint8">
+      <sysvar name="Checksum232" namespace="FDX::IPB1" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="290" size="8">
+    <identifier>IPB4 290</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="IPB_wheelSpeedRL" namespace="FDX::IPB4" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="IPB_wheelSpeedRLValid" namespace="FDX::IPB4" value="raw"/>
+    </item>
+    <item offset="3" size="2" type="uint16">
+      <sysvar name="IPB_wheelSpeedRR" namespace="FDX::IPB4" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="IPB_wheelSpeedRRValid" namespace="FDX::IPB4" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="RollingCounter122" namespace="FDX::IPB4" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="Checksum122" namespace="FDX::IPB4" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="322" size="8">
+    <identifier>IPB5 322</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="IPB_wheelSpeedFL" namespace="FDX::IPB5" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="IPB_wheelSpeedFLValid" namespace="FDX::IPB5" value="raw"/>
+    </item>
+    <item offset="3" size="2" type="uint16">
+      <sysvar name="IPB_wheelSpeedFR" namespace="FDX::IPB5" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="IPB_wheelSpeedFRValid" namespace="FDX::IPB5" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="RollingCounter142" namespace="FDX::IPB5" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="Checksum142" namespace="FDX::IPB5" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="258" size="14">
+    <identifier>IPB6 258</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="IPB_abpAvailable" namespace="FDX::IPB6" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="IPB_abpActive" namespace="FDX::IPB6" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="IPB_abaAvailable" namespace="FDX::IPB6" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="IPB_abaActive" namespace="FDX::IPB6" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="IPB_cddTempOff" namespace="FDX::IPB6" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="IPB_cddError" namespace="FDX::IPB6" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="IPB_cddAvailable" namespace="FDX::IPB6" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="IPB_cddActive" namespace="FDX::IPB6" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="IPB_awbAvailable" namespace="FDX::IPB6" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="IPB_awbActive" namespace="FDX::IPB6" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="IPB_aebAvailable" namespace="FDX::IPB6" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="IPB_aebActive" namespace="FDX::IPB6" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="RollingCounter102" namespace="FDX::IPB6" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="Checksum102" namespace="FDX::IPB6" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="160" size="33">
+    <identifier>IPB7 160</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="IPB_vehicleSpeed" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="IPB_vehicleSpeedValid" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="IPB_absFault" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="IPB_absActive" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="IPB_hdcAvailable" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="IPB_cdpAvailable" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="IPB_cdpActive" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="IPB_avhAvailable" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="IPB_avhSts" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="IPB_tcsActive" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="IPB_vdcActive" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="IPB_brakelightRequest" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="IPB_ModeSts" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="IPB_vehicleStandstillValid" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="15" size="1" type="uint8">
+      <sysvar name="IPB_vehicleStandstill" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="16" size="1" type="uint8">
+      <sysvar name="IPB_epbRequest" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="17" size="1" type="uint8">
+      <sysvar name="IPB_ESCoffSts" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="18" size="1" type="uint8">
+      <sysvar name="IPB_ebd_active" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="19" size="1" type="uint8">
+      <sysvar name="IPB_ebdFault" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="20" size="1" type="uint8">
+      <sysvar name="IPB_hhcAvailable" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="21" size="1" type="uint8">
+      <sysvar name="IPB_hhcActive" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="22" size="1" type="uint8">
+      <sysvar name="IPB_hdcSts" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="23" size="1" type="uint8">
+      <sysvar name="IPB_esclampdisplay" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="24" size="1" type="uint8">
+      <sysvar name="IPB_dtcActive" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="25" size="1" type="uint8">
+      <sysvar name="IPB_hba_active" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="26" size="1" type="uint8">
+      <sysvar name="IPB_hazErrorSt" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="27" size="1" type="uint8">
+      <sysvar name="IPB_haz_active" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="28" size="1" type="uint8">
+      <sysvar name="IPB_escFault" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="29" size="1" type="uint8">
+      <sysvar name="IPB_HRBActive" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="30" size="1" type="uint8">
+      <sysvar name="IPB_BDWActive" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="31" size="1" type="uint8">
+      <sysvar name="RollingCounter0A0" namespace="FDX::IPB7" value="raw"/>
+    </item>
+    <item offset="32" size="1" type="uint8">
+      <sysvar name="Checksum0A0" namespace="FDX::IPB7" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="674" size="9">
+    <identifier>IPB8 674</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="IPB_vlcTorqReq" namespace="FDX::IPB8" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="IPB_vlcAvalible" namespace="FDX::IPB8" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="IPB_vlcError" namespace="FDX::IPB8" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="IPB_vlcTorqReqActive" namespace="FDX::IPB8" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="IPB_vlcInterTargetAx" namespace="FDX::IPB8" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="IPB_vlcActive" namespace="FDX::IPB8" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="RollingCounter2A2" namespace="FDX::IPB8" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="Checksum2A2" namespace="FDX::IPB8" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="626" size="13">
+    <identifier>IPB9 626</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="IPB_sumOfEdgeFLWSS" namespace="FDX::IPB9" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="IPB_sumOfEdgeFRWSS" namespace="FDX::IPB9" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="IPB_sumOfEdgeFLWSSValid" namespace="FDX::IPB9" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="IPB_sumOfEdgeFRWSSValid" namespace="FDX::IPB9" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="IPB_wheelDirectionFLValid" namespace="FDX::IPB9" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="IPB_wheelDirectionFRValid" namespace="FDX::IPB9" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="IPB_wheelDirectionFL" namespace="FDX::IPB9" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="IPB_wheelDirectionFR" namespace="FDX::IPB9" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="IPB_vehicleDirection" namespace="FDX::IPB9" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="RollingCounter272" namespace="FDX::IPB9" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="Checksum272" namespace="FDX::IPB9" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="642" size="12">
+    <identifier>IPB10 642</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="IPB_sumOfEdgeRLWSS" namespace="FDX::IPB10" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="IPB_sumOfEdgeRRWSS" namespace="FDX::IPB10" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="IPB_sumOfEdgeRLWSSValid" namespace="FDX::IPB10" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="IPB_sumOfEdgeRRWSSValid" namespace="FDX::IPB10" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="IPB_wheelDirectionRLValid" namespace="FDX::IPB10" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="IPB_wheelDirectionRRValid" namespace="FDX::IPB10" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="IPB_wheelDirectionRL" namespace="FDX::IPB10" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="IPB_wheelDirectionRR" namespace="FDX::IPB10" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="RollingCounter282" namespace="FDX::IPB10" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="Checksum282" namespace="FDX::IPB10" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="532" size="17">
+    <identifier>IPB12 532</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="ipb_SystemStatus" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="ipb_brakeFluidWarning" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="ipb_brakePedalStatus" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="ipb_TwoFootDriveWarning" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="ipb_FWAWarning" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="5" size="2" type="uint16">
+      <sysvar name="IPB_BrkFricTqTotAtWhls" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="7" size="2" type="uint16">
+      <sysvar name="ipb_DSTSteeringTorqOffset" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="ipb_CSTStatus" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="ipb_DSTStatus" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="IPB_BrkFricTqTotAtWhlsInvalid" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="IPB_SCMActive" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="IPB_SCMAvailable" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="IPB_EBPActive" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="15" size="1" type="uint8">
+      <sysvar name="RollingCounter214" namespace="FDX::IPB12" value="raw"/>
+    </item>
+    <item offset="16" size="1" type="uint8">
+      <sysvar name="Checksum214" namespace="FDX::IPB12" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="534" size="11">
+    <identifier>IPB13 534</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="ipb_SimulatorPressure" namespace="FDX::IPB13" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="ipb_PlungerPressure" namespace="FDX::IPB13" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="ipb_PlungerPressureStatus" namespace="FDX::IPB13" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="ipb_SimulatorPressureStatus" namespace="FDX::IPB13" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="ipb_InputRodStrokeStatus" namespace="FDX::IPB13" value="raw"/>
+    </item>
+    <item offset="7" size="2" type="uint16">
+      <sysvar name="ipb_InputRodStroke" namespace="FDX::IPB13" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="RollingCounter216" namespace="FDX::IPB13" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="Checksum216" namespace="FDX::IPB13" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="535" size="3">
+    <identifier>IPB_OBD 535</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="IPB_OBD_Lamp_Req" namespace="FDX::IPB_OBD" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="RollingCounter217" namespace="FDX::IPB_OBD" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="Checksum217" namespace="FDX::IPB_OBD" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="578" size="12">
+    <identifier>IPB_apaSet 578</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="IPB_LSMMode" namespace="FDX::IPB_apaSet" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="IPB_LSMCtrlFaultSts" namespace="FDX::IPB_apaSet" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="IPB_ParkLSMAvl" namespace="FDX::IPB_apaSet" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="IPB_LSMEmergencyAvl" namespace="FDX::IPB_apaSet" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="IPB_LSMComfortAvl" namespace="FDX::IPB_apaSet" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="IPB_LSMHandshake" namespace="FDX::IPB_apaSet" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="IPB_LSMBrakeMode" namespace="FDX::IPB_apaSet" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="IPB_ActiveHold" namespace="FDX::IPB_apaSet" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="IPB_targetGearReq" namespace="FDX::IPB_apaSet" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="IPB_apa_cddActive" namespace="FDX::IPB_apaSet" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="RollingCounter242" namespace="FDX::IPB_apaSet" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="Checksum242" namespace="FDX::IPB_apaSet" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="298" size="16">
+    <identifier>EPBM_state 298</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="EPBM_TextDisplay" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="EPBM_ParkingLamp" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="EPBM_FaultLamp" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="EPBM_CDPRequest" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="EPBM_BrakeSwInfo" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="EPBM_Sts" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="EPBM_TextDisplayOnIVI" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="7" size="2" type="uint16">
+      <sysvar name="EPBM_CDPAx" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="EPBM_CDPAxValid" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="EPBM_FailStatus" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="EPBM_brakelightRequest" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="EPB_MReqfailstatus" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="EPBM_Sts_LR" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="RollingCounter12A" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+    <item offset="15" size="1" type="uint8">
+      <sysvar name="Checksum12A" namespace="FDX::EPBM_state" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="292" size="15">
+    <identifier>EPS_state 292</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="EPS_STR_TQR_SEN" namespace="FDX::EPS_state" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="EPS_TOI_ACTIVE" namespace="FDX::EPS_state" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="EPS_STR_TQR_SEN_sts" namespace="FDX::EPS_state" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="EPS_Ctrl_AVAILABLE" namespace="FDX::EPS_state" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="eps_warningLamp" namespace="FDX::EPS_state" value="raw"/>
+    </item>
+    <item offset="6" size="2" type="uint16">
+      <sysvar name="EPS_TOI_TorFeedback" namespace="FDX::EPS_state" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="EPS_TOI_FAULT" namespace="FDX::EPS_state" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="EPS_LDW_Vibration_status" namespace="FDX::EPS_state" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="EPS_ApaControlFaultSts" namespace="FDX::EPS_state" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="EPS_ApaControlSts" namespace="FDX::EPS_state" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="EPS_ModeFb" namespace="FDX::EPS_state" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="RollingCounter124" namespace="FDX::EPS_state" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="Checksum124" namespace="FDX::EPS_state" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="324" size="12">
+    <identifier>EPS_SAS 324</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="eps_sasSteeringAngle" namespace="FDX::EPS_SAS" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="eps_pinionAngle" namespace="FDX::EPS_SAS" value="raw"/>
+    </item>
+    <item offset="4" size="2" type="uint16">
+      <sysvar name="eps_sasSteeringAngleSpd" namespace="FDX::EPS_SAS" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="eps_sasSteeringAngleSpdValid" namespace="FDX::EPS_SAS" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="eps_calibratedSts" namespace="FDX::EPS_SAS" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="eps_sasSteeringAngleValid" namespace="FDX::EPS_SAS" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="eps_sasFailure" namespace="FDX::EPS_SAS" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="RollingCounter144" namespace="FDX::EPS_SAS" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="Checksum144" namespace="FDX::EPS_SAS" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="446" size="7">
+    <identifier>IVI_chassisSet 446</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="ivi_CSTOnOffSet" namespace="FDX::IVI_chassisSet" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="ivi_hdcOnOffSet" namespace="FDX::IVI_chassisSet" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="ivi_escOffSw" namespace="FDX::IVI_chassisSet" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="ivi_epsModeSet" namespace="FDX::IVI_chassisSet" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="ivi_IPBModeSet" namespace="FDX::IVI_chassisSet" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="ivi_AVHOnOffSet" namespace="FDX::IVI_chassisSet" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="ivi_EPBSwitchSet" namespace="FDX::IVI_chassisSet" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="766" size="7">
+    <identifier>IC_state 766</identifier>
+    <item offset="0" size="4" type="uint32">
+      <sysvar name="ic_totalMileage" namespace="FDX::IC_state" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="ic_totalMileageValid" namespace="FDX::IC_state" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="RollingCounter2FE" namespace="FDX::IC_state" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="Checksum2FE" namespace="FDX::IC_state" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="82" size="3">
+    <identifier>TBOX_engineOFF 82</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="Tbox_engOffTime" namespace="FDX::TBOX_engineOFF" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="Tbox_engOffTimeValid" namespace="FDX::TBOX_engineOFF" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="875" size="2">
+    <identifier>AC1 875</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="AC_ambientTempValid" namespace="FDX::AC1" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="AC_ambientTemp" namespace="FDX::AC1" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1022" size="7">
+    <identifier>IVI_timeAndGPS 1022</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="ivi_timeInfoSecond" namespace="FDX::IVI_timeAndGPS" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="ivi_timeInfoMinute" namespace="FDX::IVI_timeAndGPS" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="ivi_timeInfoHour" namespace="FDX::IVI_timeAndGPS" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="ivi_timeInfoDay" namespace="FDX::IVI_timeAndGPS" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="ivi_timeInfoMonth" namespace="FDX::IVI_timeAndGPS" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="ivi_timeInfoYear" namespace="FDX::IVI_timeAndGPS" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="ivi_timeValid" namespace="FDX::IVI_timeAndGPS" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="999" size="4">
+    <identifier>OIB_BCM_State1 999</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="DCU_FL_doorFLSts" namespace="FDX::OIB_BCM_State1" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="BCM_WiperLogicStallSts" namespace="FDX::OIB_BCM_State1" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="RollingCounter3E7" namespace="FDX::OIB_BCM_State1" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="Checksum3E7" namespace="FDX::OIB_BCM_State1" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1002" size="1">
+    <identifier>GW_LIN_CHA 1002</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="rls_WiperSpeed" namespace="FDX::GW_LIN_CHA" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="687" size="1">
+    <identifier>GW_BCM_DCU_CHA 687</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="bcm_frontWiperSts" namespace="FDX::GW_BCM_DCU_CHA" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="705" size="5">
+    <identifier>BCM_peps 705</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="bcm_pepsPowerMode" namespace="FDX::BCM_peps" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="bcm_ble_response" namespace="FDX::BCM_peps" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="bcm_remoteMode" namespace="FDX::BCM_peps" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="bcm_tbox_response" namespace="FDX::BCM_peps" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="bcm_12VBatterySOC" namespace="FDX::BCM_peps" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1278" size="3">
+    <identifier>TBOX_VehicleMode 1278</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="tbox_vehicleMode" namespace="FDX::TBOX_VehicleMode" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="RollingCounter4FE" namespace="FDX::TBOX_VehicleMode" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="Checksum4FE" namespace="FDX::TBOX_VehicleMode" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="797" size="1">
+    <identifier>PDCM_IVI 797</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="PDCM_ExhibitionSts" namespace="FDX::PDCM_IVI" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="161" size="11">
+    <identifier>MCUF1 161</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="MCUF_ActualTorque" namespace="FDX::MCUF1" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="MCUF_MotorSpdValid" namespace="FDX::MCUF1" value="raw"/>
+    </item>
+    <item offset="3" size="2" type="uint16">
+      <sysvar name="MCUF_MotorSpd" namespace="FDX::MCUF1" value="raw"/>
+    </item>
+    <item offset="5" size="2" type="uint16">
+      <sysvar name="MCUF_MotorPower" namespace="FDX::MCUF1" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="MCUF_SelfheatingMode" namespace="FDX::MCUF1" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="MCUF_SelfheatingAllow" namespace="FDX::MCUF1" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="RollingCounter0A1" namespace="FDX::MCUF1" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="Checksum0A1" namespace="FDX::MCUF1" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="162" size="13">
+    <identifier>MCUF2 162</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="MCUF_Current_HV" namespace="FDX::MCUF2" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="MCUF_MotorMaxSpd" namespace="FDX::MCUF2" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="MCUF_TMReq_ASC" namespace="FDX::MCUF2" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="MCUF_AS_Activ" namespace="FDX::MCUF2" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="MCUF_Fault_ShutOff_HV_Req" namespace="FDX::MCUF2" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="MCUF_Fault_ASC" namespace="FDX::MCUF2" value="raw"/>
+    </item>
+    <item offset="8" size="2" type="uint16">
+      <sysvar name="MCUF_Actual_Voltage" namespace="FDX::MCUF2" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="MCUF_State" namespace="FDX::MCUF2" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="RollingCounter0A2" namespace="FDX::MCUF2" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="Checksum0A2" namespace="FDX::MCUF2" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="779" size="10">
+    <identifier>MCUF3 779</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="MCUF_MotorMaxPositiveTorque" namespace="FDX::MCUF3" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="MCUF_MotorMinNegativeTorque" namespace="FDX::MCUF3" value="raw"/>
+    </item>
+    <item offset="4" size="2" type="uint16">
+      <sysvar name="MCUF_MaxTorque_total" namespace="FDX::MCUF3" value="raw"/>
+    </item>
+    <item offset="6" size="2" type="uint16">
+      <sysvar name="MCUF_MinTorque_total" namespace="FDX::MCUF3" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="MCUF_RollingCount_20B" namespace="FDX::MCUF3" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="MCUF_Checksum_20B" namespace="FDX::MCUF3" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="849" size="10">
+    <identifier>MCUF4 849</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="MCUF_ControllerTemp" namespace="FDX::MCUF4" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="MCUF_MotorTemp" namespace="FDX::MCUF4" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="MCUF_Motor_Current_Phase_A" namespace="FDX::MCUF4" value="raw"/>
+    </item>
+    <item offset="4" size="2" type="uint16">
+      <sysvar name="MCUF_Motor_Current_Phase_B" namespace="FDX::MCUF4" value="raw"/>
+    </item>
+    <item offset="6" size="2" type="uint16">
+      <sysvar name="MCUF_Motor_Current_Phase_C" namespace="FDX::MCUF4" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="RollingCounter351" namespace="FDX::MCUF4" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="Checksum351" namespace="FDX::MCUF4" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="789" size="14">
+    <identifier>MCUF6 789</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="MCUF_Status_ActiveDischarge" namespace="FDX::MCUF6" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="MCUF_Fault_ActiveDischarge" namespace="FDX::MCUF6" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="MCUF_Fault_PowerDerating" namespace="FDX::MCUF6" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="MCUF_FaultLamp_Req" namespace="FDX::MCUF6" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="MCUF_OBD_Lamp_Req" namespace="FDX::MCUF6" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="MCUF_Fault_Code" namespace="FDX::MCUF6" value="raw"/>
+    </item>
+    <item offset="6" size="2" type="uint16">
+      <sysvar name="MCUF_PerInd_MaxPower" namespace="FDX::MCUF6" value="raw"/>
+    </item>
+    <item offset="8" size="2" type="uint16">
+      <sysvar name="MCUF_PerInd_MaxTorque" namespace="FDX::MCUF6" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="MCUF_ToltalFaultNum" namespace="FDX::MCUF6" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="MCUF_MotorStatus" namespace="FDX::MCUF6" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="RollingCounter315" namespace="FDX::MCUF6" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="Checksum315" namespace="FDX::MCUF6" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1045" size="15">
+    <identifier>MCUF8 1045</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="MCUF_RTM_WarnComm" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="MCUF_RTM_OverTemp_EM" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="MCUF_RTM_OverTemp_MCU" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="MCUF_RTM_OverSpeed" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="MCUF_Vehicle_Type" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="MCUF_HW_Version" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+    <item offset="6" size="2" type="uint16">
+      <sysvar name="MCUF_Efficiency" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="MCUF_Derating_OverTemp" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="MCUF_RTM_OverCurrent" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="MCUF_HV_Voltg_Free" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="MCUF_SW_Minor_Version" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="MCUF_SW_Major_Version" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="RollingCounter415" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="Checksum415" namespace="FDX::MCUF8" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="178" size="11">
+    <identifier>PDCM21 178</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="PDCM_MCUF_AntiJerk" namespace="FDX::PDCM21" value="raw"/>
+    </item>
+    <item offset="1" size="2" type="uint16">
+      <sysvar name="PDCM_MCUF_TorqueReq" namespace="FDX::PDCM21" value="raw"/>
+    </item>
+    <item offset="3" size="2" type="uint16">
+      <sysvar name="PDCM_MCUF_SpeedReq" namespace="FDX::PDCM21" value="raw"/>
+    </item>
+    <item offset="5" size="2" type="uint16">
+      <sysvar name="PDCM_GCU_MaxPower_D" namespace="FDX::PDCM21" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="PDCM_SelfheatingReq_MCUF" namespace="FDX::PDCM21" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="HVCO_MCUF_StateCmd" namespace="FDX::PDCM21" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="RollingCounter0B2" namespace="FDX::PDCM21" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="Checksum0B2" namespace="FDX::PDCM21" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="181" size="10">
+    <identifier>PDCM22 181</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="PDCM_MCUR_AntiJerk" namespace="FDX::PDCM22" value="raw"/>
+    </item>
+    <item offset="1" size="2" type="uint16">
+      <sysvar name="PDCM_MCUR_TorqueReq" namespace="FDX::PDCM22" value="raw"/>
+    </item>
+    <item offset="3" size="2" type="uint16">
+      <sysvar name="PDCM_MCUR_SpeedReq" namespace="FDX::PDCM22" value="raw"/>
+    </item>
+    <item offset="5" size="2" type="uint16">
+      <sysvar name="PDCM_GCU_MaxPower_G" namespace="FDX::PDCM22" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="HVCO_MCUR_StateCmd" namespace="FDX::PDCM22" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="RollingCounter0B5" namespace="FDX::PDCM22" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="Checksum0B5" namespace="FDX::PDCM22" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="983" size="10">
+    <identifier>PDCM30 983</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="PDCM_MCUF_MaxPower_D" namespace="FDX::PDCM30" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="PDCM_MCUF_MaxPower_G" namespace="FDX::PDCM30" value="raw"/>
+    </item>
+    <item offset="4" size="2" type="uint16">
+      <sysvar name="PDCM_MCUR_MaxPower_D" namespace="FDX::PDCM30" value="raw"/>
+    </item>
+    <item offset="6" size="2" type="uint16">
+      <sysvar name="PDCM_MCUR_MaxPower_G" namespace="FDX::PDCM30" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="RollingCounter3D7" namespace="FDX::PDCM30" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="Checksum3D7" namespace="FDX::PDCM30" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1135" size="6">
+    <identifier>PDCM38 1135</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="TM_Temp_senser_1" namespace="FDX::PDCM38" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="TM_Temp_senser_2" namespace="FDX::PDCM38" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="RollingCounter46F" namespace="FDX::PDCM38" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="Checksum46F" namespace="FDX::PDCM38" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="514" size="13">
+    <identifier>PDCM_IC_ACU 514</identifier>
+    <item offset="0" size="4" type="uint32">
+      <sysvar name="ic_totalMileage_s" namespace="FDX::PDCM_IC_ACU" value="raw"/>
+    </item>
+    <item offset="4" size="2" type="uint16">
+      <sysvar name="LgtA_s" namespace="FDX::PDCM_IC_ACU" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="LgtAValSts_s" namespace="FDX::PDCM_IC_ACU" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="ic_totalMileageValid_s" namespace="FDX::PDCM_IC_ACU" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="EPBS_FaultLamp_s" namespace="FDX::PDCM_IC_ACU" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="EPBS_Sts_s" namespace="FDX::PDCM_IC_ACU" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="EPBS_BrakeSwInfo_s" namespace="FDX::PDCM_IC_ACU" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="RollingCounter202" namespace="FDX::PDCM_IC_ACU" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="Checksum202" namespace="FDX::PDCM_IC_ACU" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="179" size="7">
+    <identifier>PDCM_ACU_EPS 179</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="acu_crashOutputStsValid_s" namespace="FDX::PDCM_ACU_EPS" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="acu_crashOutputSts_s" namespace="FDX::PDCM_ACU_EPS" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="eps_sasSteeringAngle_s" namespace="FDX::PDCM_ACU_EPS" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="eps_sasSteeringAngleValid_s" namespace="FDX::PDCM_ACU_EPS" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="RollingCounter0B3" namespace="FDX::PDCM_ACU_EPS" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="Checksum0B3" namespace="FDX::PDCM_ACU_EPS" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="987" size="13">
+    <identifier>PDCM_Body_IC 987</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="bcm_hoodSts_s" namespace="FDX::PDCM_Body_IC" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="BCM_refuelReq_s" namespace="FDX::PDCM_Body_IC" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="bcm_fuelCapSts_s" namespace="FDX::PDCM_Body_IC" value="raw"/>
+    </item>
+    <item offset="3" size="2" type="uint16">
+      <sysvar name="ebs_U_BATT_s" namespace="FDX::PDCM_Body_IC" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="ic_oilPercent_s" namespace="FDX::PDCM_Body_IC" value="raw"/>
+    </item>
+    <item offset="6" size="2" type="uint16">
+      <sysvar name="IC_OilSensorResistance_s" namespace="FDX::PDCM_Body_IC" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="ic_oilPercentFail_s" namespace="FDX::PDCM_Body_IC" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="AC_WarmWindReq_s" namespace="FDX::PDCM_Body_IC" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="AC_ambientTempValid_s" namespace="FDX::PDCM_Body_IC" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="AC_Warmvalvestate_s" namespace="FDX::PDCM_Body_IC" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="AC_ambientTemp_s" namespace="FDX::PDCM_Body_IC" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="854" size="1">
+    <identifier>PDCM_SelfHeat 854</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="PDCM_SelfheatingMode_0x356" namespace="FDX::PDCM_SelfHeat" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="787" size="4">
+    <identifier>MCUF_SelfHeat1 787</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="MCUF_UdFreq" namespace="FDX::MCUF_SelfHeat1" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="MCUF_UdVolt" namespace="FDX::MCUF_SelfHeat1" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="164" size="4">
+    <identifier>MCUF_SelfHeat2 164</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="MCUF_BusCurrent" namespace="FDX::MCUF_SelfHeat2" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="MCUF_BusFreq" namespace="FDX::MCUF_SelfHeat2" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1172" size="6">
+    <identifier>OIB_VIUF_PTC_0x25 1172</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="Cptc_EnableReq" namespace="FDX::OIB_VIUF_PTC_0x25" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="Cptc_InitReq" namespace="FDX::OIB_VIUF_PTC_0x25" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="Cptc_ClearFaultReq" namespace="FDX::OIB_VIUF_PTC_0x25" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="Cptc_PwrLimit" namespace="FDX::OIB_VIUF_PTC_0x25" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="Cptc_TempTgt" namespace="FDX::OIB_VIUF_PTC_0x25" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="Cptc_PwrRatReq" namespace="FDX::OIB_VIUF_PTC_0x25" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1174" size="10">
+    <identifier>VIUF_OIB_PTC_0x26 1174</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="Cptc_CurPwr" namespace="FDX::VIUF_OIB_PTC_0x26" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="Cptc_CurHVol" namespace="FDX::VIUF_OIB_PTC_0x26" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="Cptc_CurTemp" namespace="FDX::VIUF_OIB_PTC_0x26" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="Cptc_InitSts" namespace="FDX::VIUF_OIB_PTC_0x26" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="Cptc_SigWarn" namespace="FDX::VIUF_OIB_PTC_0x26" value="raw"/>
+    </item>
+    <item offset="6" size="2" type="uint16">
+      <sysvar name="Cptc_Sigfault" namespace="FDX::VIUF_OIB_PTC_0x26" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="Cptc_SwVersion" namespace="FDX::VIUF_OIB_PTC_0x26" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="Cptc_HwVersion" namespace="FDX::VIUF_OIB_PTC_0x26" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1145" size="4">
+    <identifier>OIB_VIUF_AGS_0x0E 1145</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="AGM1_Position_Cmd" namespace="FDX::OIB_VIUF_AGS_0x0E" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="AGM1_CalbIsEnbld_Cmd" namespace="FDX::OIB_VIUF_AGS_0x0E" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="AGM1_BoostTrq_Cmd" namespace="FDX::OIB_VIUF_AGS_0x0E" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="AGM1_HldgCurStg_Cmd" namespace="FDX::OIB_VIUF_AGS_0x0E" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1146" size="12">
+    <identifier>VIUF_OIB_AGS_0x0F 1146</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="AGM1_CurrentPos_Status" namespace="FDX::VIUF_OIB_AGS_0x0F" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="AGM1_OverTvlBrkg_Status" namespace="FDX::VIUF_OIB_AGS_0x0F" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="AGM1_SnsrError_Status" namespace="FDX::VIUF_OIB_AGS_0x0F" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="AGM1_CalbIsOn_Status" namespace="FDX::VIUF_OIB_AGS_0x0F" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="AGM1_CalbIsReq_Status" namespace="FDX::VIUF_OIB_AGS_0x0F" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="AGM1_UnderOverVoltError_Status" namespace="FDX::VIUF_OIB_AGS_0x0F" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="AGM1_BlockError_Status" namespace="FDX::VIUF_OIB_AGS_0x0F" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="AGM1_ElectricalError_Status" namespace="FDX::VIUF_OIB_AGS_0x0F" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="AGM1_OverTemError_Status" namespace="FDX::VIUF_OIB_AGS_0x0F" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="AGM1_BoostTrq_Status" namespace="FDX::VIUF_OIB_AGS_0x0F" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="AGM1_HldgCurStg_Status" namespace="FDX::VIUF_OIB_AGS_0x0F" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="AGM1_LIN_ErrorStatus" namespace="FDX::VIUF_OIB_AGS_0x0F" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1157" size="10">
+    <identifier>OIB_VIUF_Blower_0x20 1157</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="Blower_EmgRunThldSelect" namespace="FDX::OIB_VIUF_Blower_0x20" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="Blower_EmgRunThldReq" namespace="FDX::OIB_VIUF_Blower_0x20" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="Blower_CrashEmgOff" namespace="FDX::OIB_VIUF_Blower_0x20" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="Blower_NodeSelector" namespace="FDX::OIB_VIUF_Blower_0x20" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="Blower_MaxCurrentLimReq" namespace="FDX::OIB_VIUF_Blower_0x20" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="Blower_EmgRunRestartReq" namespace="FDX::OIB_VIUF_Blower_0x20" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="Blower_RotDirReq" namespace="FDX::OIB_VIUF_Blower_0x20" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="Blower_BuildUpRampReq" namespace="FDX::OIB_VIUF_Blower_0x20" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="Blower_RPMSetpointReq" namespace="FDX::OIB_VIUF_Blower_0x20" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="Blower_EmgRunSetpointReq" namespace="FDX::OIB_VIUF_Blower_0x20" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1158" size="17">
+    <identifier>VIUF_OIB_Blower_0x25 1158</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="Blower_Current" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="Blower_RPM" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="Blower_InternalTemp" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="3" size="2" type="uint16">
+      <sysvar name="Blower_SupplyVoltage" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="Blower_RsErr" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="Blower_InternalState" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="Blower_CurrentLimitState" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="Blower_VoltageState" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="Blower_ShortCircuitState" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="Blower_BlockedState" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="Blower_TempDeratState" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="Blower_RotDirectionState" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="Blower_InternalErrorState" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="Blower_VoltageDeratingState" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="15" size="1" type="uint8">
+      <sysvar name="Blower_WindmillingState" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+    <item offset="16" size="1" type="uint8">
+      <sysvar name="Blower_WakeupReason" namespace="FDX::VIUF_OIB_Blower_0x25" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1130" size="4">
+    <identifier>OIB_VIUF_HVEDC_0x1A 1130</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="Comp_Target_Speed" namespace="FDX::OIB_VIUF_HVEDC_0x1A" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="Comp_Target_PwrLim" namespace="FDX::OIB_VIUF_HVEDC_0x1A" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="Comp_Target_Enable" namespace="FDX::OIB_VIUF_HVEDC_0x1A" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1131" size="9">
+    <identifier>VIUF_OIB_HVEDC_0x1B 1131</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="Comp_DC_Current" namespace="FDX::VIUF_OIB_HVEDC_0x1B" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="Comp_Phase_Current" namespace="FDX::VIUF_OIB_HVEDC_0x1B" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="Comp_Temperature" namespace="FDX::VIUF_OIB_HVEDC_0x1B" value="raw"/>
+    </item>
+    <item offset="3" size="2" type="uint16">
+      <sysvar name="Comp_Actual_Speed" namespace="FDX::VIUF_OIB_HVEDC_0x1B" value="raw"/>
+    </item>
+    <item offset="5" size="2" type="uint16">
+      <sysvar name="Comp_DC_Voltage" namespace="FDX::VIUF_OIB_HVEDC_0x1B" value="raw"/>
+    </item>
+    <item offset="7" size="2" type="uint16">
+      <sysvar name="Comp_Power" namespace="FDX::VIUF_OIB_HVEDC_0x1B" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1133" size="17">
+    <identifier>VIUF_OIB_HVEDC_0x1C 1133</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="Comp_Lv_VoltageError" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="Comp_Hv_OverVoltageError" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="Comp_Hv_UnderVoltageError" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="Comp_StallError" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="Comp_ECU_InternalError" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="Comp_Status" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="Comp_OvertemperatureError" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="Comp_StartupError" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="Comp_DriverError" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="Comp_CurrentSamplingError" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="Comp_TemperatureSensorError" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="Comp_OverpPhaseCurrentError" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="Comp_RspError" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="13" size="2" type="uint16">
+      <sysvar name="Comp_HWVer" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+    <item offset="15" size="2" type="uint16">
+      <sysvar name="Comp_SWVer" namespace="FDX::VIUF_OIB_HVEDC_0x1C" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="481" size="14">
+    <identifier>VIU_OIB_EBS_0x34 481</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="ebs_U_BATT_60" namespace="FDX::VIU_OIB_EBS_0x34" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="ebs_I_RANGE_60" namespace="FDX::VIU_OIB_EBS_0x34" value="raw"/>
+    </item>
+    <item offset="3" size="2" type="uint16">
+      <sysvar name="ebs_I_BATT_60" namespace="FDX::VIU_OIB_EBS_0x34" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="ebs_T_BATT_60" namespace="FDX::VIU_OIB_EBS_0x34" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="ebs_IBATT_QUIESCNET_60" namespace="FDX::VIU_OIB_EBS_0x34" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="ebs_Status_Current_60" namespace="FDX::VIU_OIB_EBS_0x34" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="ebs_Status_Voltage_60" namespace="FDX::VIU_OIB_EBS_0x34" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="ebs_Status_Temp_60" namespace="FDX::VIU_OIB_EBS_0x34" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="ebs_ERROR_Calib_60" namespace="FDX::VIU_OIB_EBS_0x34" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="ebs_ERROR_IDENT_60" namespace="FDX::VIU_OIB_EBS_0x34" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="ebs_EBS_ResponseError_60" namespace="FDX::VIU_OIB_EBS_0x34" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="ebs_FLAG_INCONSISTENCY_60" namespace="FDX::VIU_OIB_EBS_0x34" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="484" size="12">
+    <identifier>VIU_OIB_EBS_0x35 484</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="ebs_SOC_60" namespace="FDX::VIU_OIB_EBS_0x35" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="ebs_SOH_SUL_60" namespace="FDX::VIU_OIB_EBS_0x35" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="ebs_SOFV_StopEnable_60" namespace="FDX::VIU_OIB_EBS_0x35" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="ebs_SOFV_Restart_60" namespace="FDX::VIU_OIB_EBS_0x35" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="ebs_SOH_LAM_60" namespace="FDX::VIU_OIB_EBS_0x35" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="ebs_SOH_COR_60" namespace="FDX::VIU_OIB_EBS_0x35" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="ebs_SOC_STATE_60" namespace="FDX::VIU_OIB_EBS_0x35" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="ebs_SOH_SUL_STATE_60" namespace="FDX::VIU_OIB_EBS_0x35" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="ebs_SOFV_StopEnable_STATE_60" namespace="FDX::VIU_OIB_EBS_0x35" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="ebs_SOFV_Restart_STATE_60" namespace="FDX::VIU_OIB_EBS_0x35" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="ebs_SOH_LAM_STATE_60" namespace="FDX::VIU_OIB_EBS_0x35" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="ebs_SOH_COR_STATE_60" namespace="FDX::VIU_OIB_EBS_0x35" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="487" size="4">
+    <identifier>VIU_OIB_EBS_0x36 487</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="ebs_Q_Charge_60" namespace="FDX::VIU_OIB_EBS_0x36" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="ebs_Q_Discharge_60" namespace="FDX::VIU_OIB_EBS_0x36" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="256" size="24">
+    <identifier>HCM_L 256</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="HCM_LeftLowBeamFault" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="HCM_LeftLowBeamSts" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="HCM_middleLeftPositionLampFault" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="HCM_middleLeftPositionLampSts" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="HCM_LeftDRLFault" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="HCM_LeftDRLSts" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="HCM_LeftpositionLampFault" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="HCM_LeftpositionLampSts" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="HCM_LeftTurnLampFault" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="HCM_LeftTurnLampSts" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="HCM_hcmHeightSetLt" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="HCM_LeftHighBeamFault" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="HCM_LeftHighBeamSts" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="HCM_middleRightPositionLampSts" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="HCM_middleRightPositionLampFault" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="15" size="1" type="uint8">
+      <sysvar name="HCM_leftADBModeSts" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="16" size="1" type="uint8">
+      <sysvar name="HCM_LeftWelcomeLightSts" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="17" size="1" type="uint8">
+      <sysvar name="HCM_LeftHPPWelLightSts" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="18" size="1" type="uint8">
+      <sysvar name="HCM_WelcomeMusicEnable" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="19" size="1" type="uint8">
+      <sysvar name="HCM_LeftAFSFault" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="20" size="1" type="uint8">
+      <sysvar name="HCM_LeftAutoHeightAdjustFault" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="21" size="1" type="uint8">
+      <sysvar name="HCM_LeftMatrixLEDunitFault" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="22" size="1" type="uint8">
+      <sysvar name="RollingCounter100" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+    <item offset="23" size="1" type="uint8">
+      <sysvar name="Checksum100" namespace="FDX::HCM_L" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="272" size="19">
+    <identifier>HCM_R 272</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="HCM_RightLowBeamFault" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="HCM_RightLowBeamSts" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="HCM_RightDRLFault" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="HCM_RightDRLSts" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="HCM_RightpositionLampFault" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="HCM_RightpositionLampSts" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="HCM_RightTurnLampFault" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="HCM_RightTurnLampSts" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="HCM_hcmHeightSetRt" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="HCM_RightHighBeamFault" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="HCM_RightHighBeamSts" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="HCM_rightADBModeSts" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="HCM_RightWelcomeLightSts" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="HCM_RightHPPWelLightSts" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="HCM_RightAFSFault" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="15" size="1" type="uint8">
+      <sysvar name="HCM_RightAutoHeightAdjustFault" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="16" size="1" type="uint8">
+      <sysvar name="HCM_RightMatrixLEDunitFault" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="17" size="1" type="uint8">
+      <sysvar name="RollingCounter110" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+    <item offset="18" size="1" type="uint8">
+      <sysvar name="Checksum110" namespace="FDX::HCM_R" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="263" size="12">
+    <identifier>RLLM_Fix 263</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="RLM_LeftStopLampSts" namespace="FDX::RLLM_Fix" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="RLM_LeftTurnLampSts" namespace="FDX::RLLM_Fix" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="RLM_LeftPositionLampFault" namespace="FDX::RLLM_Fix" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="RLM_LeftPositionLampSts" namespace="FDX::RLLM_Fix" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="RLM_LeftHPPWelLightSts" namespace="FDX::RLLM_Fix" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="RLM_LeftWelcomeLightSts" namespace="FDX::RLLM_Fix" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="RLM_LeftStopLampFault" namespace="FDX::RLLM_Fix" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="RLM_LeftTurnLampFault" namespace="FDX::RLLM_Fix" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="RLM_HighStopLampFault" namespace="FDX::RLLM_Fix" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="RLM_HighStopLampSts" namespace="FDX::RLLM_Fix" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="RollingCounter107" namespace="FDX::RLLM_Fix" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="Checksum107" namespace="FDX::RLLM_Fix" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="264" size="14">
+    <identifier>RLM_Move 264</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="RLM_MidRightTurnLampSts" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="RLM_MidStopLampFault" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="RLM_MidLeftTurnLampFault" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="RLM_MidStopLampSts" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="RLM_MidLeftTurnLampSts" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="RLM_MidpositionLampFault" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="RLM_MidpositionLampSts" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="RLM_MidRightTurnLampFault" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="RLM_ReverseLampSts" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="RLM_ReversingLampFault" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="RLM_WelcomeLightSts" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="RLM_HPPWelLightSts" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="RollingCounter108" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="Checksum108" namespace="FDX::RLM_Move" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="279" size="14">
+    <identifier>RRLM_Fix 279</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="RLM_RightStopLampSts" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="RLM_RightTurnLampSts" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="RLM_RearfogLampFault" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="RLM_RearfogLampSts" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="RLM_RightPositionLampFault" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="RLM_RightPositionLampSts" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="RLM_RightHPPWelLightSts" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="RLM_RightWelcomeLightSts" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="RLM_RightStopLampFault" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="RLM_RightTurnLampFault" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="RLM_LicenseLampFault" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="RLM_LicenseLampSts" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="RollingCounter117" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="Checksum117" namespace="FDX::RRLM_Fix" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="673" size="21">
+    <identifier>BCM_state 673</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="BCM_FLdrlReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="BCM_RMPosLampReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="BCM_FLPosLampReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="BCM_ADBModeReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="BCM_EXLHeightAdjtReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="BCM_HighBeamReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="BCM_LowBeamReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="BCM_FRPosLampReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="BCM_FRdrlReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="BCM_RightTurnLampReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="BCM_LeftTurnLampReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="BCM_RearfoglampReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="BCM_turnLampSerialReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="BCM_turnLampFlickerReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="BCM_RRPosLampReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="15" size="1" type="uint8">
+      <sysvar name="BCM_RLPosLampReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="16" size="1" type="uint8">
+      <sysvar name="BCM_LicenseLampReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="17" size="1" type="uint8">
+      <sysvar name="BCM_StoplampReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="18" size="1" type="uint8">
+      <sysvar name="BCM_ReversinglampReq" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="19" size="1" type="uint8">
+      <sysvar name="RollingCounter2A1" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+    <item offset="20" size="1" type="uint8">
+      <sysvar name="Checksum2A1" namespace="FDX::BCM_state" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="960" size="6">
+    <identifier>BCM_state2 960</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="BCM_HPPWelLightReq" namespace="FDX::BCM_state2" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="BCM_WelcomeLightReq" namespace="FDX::BCM_state2" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="BCM_RearAtmoLampReq" namespace="FDX::BCM_state2" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="BCM_AFSModeReq" namespace="FDX::BCM_state2" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="bcm_backlightadjust" namespace="FDX::BCM_state2" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="BCM_ApproachLightReq" namespace="FDX::BCM_state2" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="916" size="1">
+    <identifier>POT_state 916</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="pot_tailgateOpenSts" namespace="FDX::POT_state" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="405" size="32">
+    <identifier>OIB_VIU_Cmd 405</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="Gls_Evl_Req" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="FrontRow_Evl_Req" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="HeatingPump_Frequency_Adjust" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="HeatingPump_Dutycycle_Adjust" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="SetCoolingFanPWMCtrl" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="SetHVBattOIBPumpPositionCmd" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="SetLTPumpPositionCmd" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="8" size="2" type="uint16">
+      <sysvar name="SetCoolingFanPWMFrequency" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="10" size="2" type="uint16">
+      <sysvar name="SetHVBattOIBPumpPWMFrequency" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="12" size="2" type="uint16">
+      <sysvar name="SetLTPumpPWMFrequency" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="FrontWiperServicePosReq" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="15" size="1" type="uint8">
+      <sysvar name="FrontWasherReq" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="16" size="1" type="uint8">
+      <sysvar name="FrontWiperActionReq" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="17" size="1" type="uint8">
+      <sysvar name="FrontWiperSpeedReq" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="18" size="2" type="uint16">
+      <sysvar name="OHX_EXV_Position_Req" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="20" size="2" type="uint16">
+      <sysvar name="FR_EXV_Position_Req" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="22" size="2" type="uint16">
+      <sysvar name="BC_EXV_Position_Req" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="24" size="2" type="uint16">
+      <sysvar name="Valve5_PositionReq" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="26" size="2" type="uint16">
+      <sysvar name="Valve6_PositionReq" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="28" size="1" type="uint8">
+      <sysvar name="Valve5_InitialReq" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="29" size="1" type="uint8">
+      <sysvar name="Valve6_InitialReq" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="30" size="1" type="uint8">
+      <sysvar name="RollingCounter195" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+    <item offset="31" size="1" type="uint8">
+      <sysvar name="Checksum195" namespace="FDX::OIB_VIU_Cmd" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="813" size="36">
+    <identifier>VIU_F_AC_State1 813</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="HighPressure_Advalue" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="2" size="2" type="uint16">
+      <sysvar name="LowPressure_Advalue" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="4" size="2" type="uint16">
+      <sysvar name="Condenser_Temp_Advalue" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="6" size="2" type="uint16">
+      <sysvar name="LowPressure_Temp_Advalue" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="LowPres_TempSensor_FaultSts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="Condenser_TempSensor_FaultSts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="LowPressure_Sensor_FaultSts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="HighPressure_Sensor_FaultSts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="12" size="2" type="uint16">
+      <sysvar name="OHX_TempSensor_Advalue" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="Gls_Evl_OffOn_Sts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="15" size="1" type="uint8">
+      <sysvar name="Gls_Evl_FaultSts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="16" size="1" type="uint8">
+      <sysvar name="FrontRow_Evl_OffOn_Sts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="17" size="1" type="uint8">
+      <sysvar name="FrontRow_Evl_FaultSts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="18" size="1" type="uint8">
+      <sysvar name="HeatingPump_FaultSts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="19" size="1" type="uint8">
+      <sysvar name="OHX_TempSensor_FaultSts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="20" size="1" type="uint8">
+      <sysvar name="OHX_EXV_FaultSts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="21" size="1" type="uint8">
+      <sysvar name="HeatingPump_PWM_Feedback" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="22" size="2" type="uint16">
+      <sysvar name="OHX_EXV_PosFeedback" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="24" size="1" type="uint8">
+      <sysvar name="FR_EXV_FaultSts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="25" size="2" type="uint16">
+      <sysvar name="FR_EXV_PosFeedback" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="27" size="1" type="uint8">
+      <sysvar name="Valve5_Sts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="28" size="1" type="uint8">
+      <sysvar name="BC_EXV_FaultSts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="29" size="2" type="uint16">
+      <sysvar name="BC_EXV_PosFeedback" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="31" size="1" type="uint8">
+      <sysvar name="Valve6_Sts" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="32" size="2" type="uint16">
+      <sysvar name="Valve5_Position" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+    <item offset="34" size="2" type="uint16">
+      <sysvar name="Valve6_Position" namespace="FDX::VIU_F_AC_State1" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="796" size="41">
+    <identifier>VIU_F_VCU_State1 796</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="FrontMcuInletCoolantTemp" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="CoolingFanPWMSts" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="HVBattOIBPumpPos" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="LTPumpPosition" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="FroMcuInletCoSenShToBatOpFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="Valve4InletCoolantTempSensrFaultSts" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="FrontMcuInletCoolantTempSensrFaultSts" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="LTPumpFaultSts" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="HVBattOIBPumpFaultSts" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="CoolingFanFaultSts" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="11" size="2" type="uint16">
+      <sysvar name="Valve4InletCoolantTemp" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="FroMcuInletCoSenShToGndFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="FroMcuInletCoSenVotTooLowFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="15" size="1" type="uint8">
+      <sysvar name="FroMcuInletCoSenVotTooHiFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="16" size="1" type="uint8">
+      <sysvar name="Valve4InletCoSenShToBatOpFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="17" size="1" type="uint8">
+      <sysvar name="Valve4InletCoSenShToGndFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="18" size="1" type="uint8">
+      <sysvar name="Valve4InletCoSenVotTooLowFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="19" size="1" type="uint8">
+      <sysvar name="Valve4InletCoSenVotTooHiFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="20" size="1" type="uint8">
+      <sysvar name="LTPumpCtrlCirOpenFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="21" size="1" type="uint8">
+      <sysvar name="LTPumpCtrlCirShToGndFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="22" size="1" type="uint8">
+      <sysvar name="LTPumpCtrlCirShToBatFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="23" size="1" type="uint8">
+      <sysvar name="LTPumpOverTempFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="24" size="1" type="uint8">
+      <sysvar name="LTPumpOverCurOrStallFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="25" size="1" type="uint8">
+      <sysvar name="LTPumpDryRunFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="26" size="1" type="uint8">
+      <sysvar name="HVBattOIBPumpCtrlCirOpenFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="27" size="1" type="uint8">
+      <sysvar name="HVBattOIBPumpCtrlShToGndFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="28" size="1" type="uint8">
+      <sysvar name="HVBattOIBPumpCtrlShToBatFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="29" size="1" type="uint8">
+      <sysvar name="HVBattOIBPumpCtrlDryRunFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="30" size="1" type="uint8">
+      <sysvar name="HVBattOIBPumpCtrlStallOverCurr" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="31" size="1" type="uint8">
+      <sysvar name="HVBattOIBPumpOverTemFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="32" size="1" type="uint8">
+      <sysvar name="HVBattOIBPumpLoseSpeedFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="33" size="1" type="uint8">
+      <sysvar name="CoolingFanCtrlCirOpenFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="34" size="1" type="uint8">
+      <sysvar name="CoolingFanCtrlCirShToBatFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="35" size="1" type="uint8">
+      <sysvar name="CoolingFanCtrlCirShToGndFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="36" size="1" type="uint8">
+      <sysvar name="CoolingFanStallFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="37" size="1" type="uint8">
+      <sysvar name="CoolingFanOverCurrentFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="38" size="1" type="uint8">
+      <sysvar name="CoolingFanInternalFault" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="39" size="1" type="uint8">
+      <sysvar name="RollingCounter31C" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+    <item offset="40" size="1" type="uint8">
+      <sysvar name="Checksum31C" namespace="FDX::VIU_F_VCU_State1" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="876" size="5">
+    <identifier>VIU_F_BCM_State1 876</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="FrontWasherSts" namespace="FDX::VIU_F_BCM_State1" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="FrontWiperServicePosSts" namespace="FDX::VIU_F_BCM_State1" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="FrontWiperActionSts" namespace="FDX::VIU_F_BCM_State1" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="FrontWiperSpeedSts" namespace="FDX::VIU_F_BCM_State1" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="WiperZeroPosSts" namespace="FDX::VIU_F_BCM_State1" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="870" size="2">
+    <identifier>OIB_BCM_Cmd 870</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="pot_OnOffSet_366" namespace="FDX::OIB_BCM_Cmd" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="pot_PositionStsSet_366" namespace="FDX::OIB_BCM_Cmd" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="892" size="14">
+    <identifier>POT_state1 892</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="pot_OIB_tailgateOpenSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="pot_HallCountErrSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="pot_HallShortCircuitLSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="pot_HallShortCircuitRSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="pot_ManuelLckErrSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="pot_MotorErrFSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="pot_MotorErrRSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="pot_OverVoltageDetectedSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="pot_UnderVoltageDetectedSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="pot_workingSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="pot_AssistantSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="pot_POTInsButtonSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="pot_POTOtsButtonSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="pot_PositionSetSts" namespace="FDX::POT_state1" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="61" size="10">
+    <identifier>ACU_IMU_1 61</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="LatA" namespace="FDX::ACU_IMU_1" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="YawRateValSts" namespace="FDX::ACU_IMU_1" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="LatAValSts" namespace="FDX::ACU_IMU_1" value="raw"/>
+    </item>
+    <item offset="4" size="4" type="uint32">
+      <sysvar name="YawRate" namespace="FDX::ACU_IMU_1" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="RollingCounter03D" namespace="FDX::ACU_IMU_1" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="Checksum03D" namespace="FDX::ACU_IMU_1" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="62" size="6">
+    <identifier>ACU_IMU_2 62</identifier>
+    <item offset="0" size="2" type="uint16">
+      <sysvar name="LgtA" namespace="FDX::ACU_IMU_2" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="AxAyYrsCalSts" namespace="FDX::ACU_IMU_2" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="LgtAValSts" namespace="FDX::ACU_IMU_2" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="RollingCounter03E" namespace="FDX::ACU_IMU_2" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="Checksum03E" namespace="FDX::ACU_IMU_2" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="896" size="17">
+    <identifier>ACU_state 896</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="acu_crashOutputStsValid" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="acu_warningLampSts" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="acu_secondMiddleSeatBeltSts" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="acu_secondLeftSeatBeltSts" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="acu_passengerAirbagSts" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="acu_passengerSeatBeltStsValid" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="6" size="1" type="uint8">
+      <sysvar name="acu_passengerSeatBeltSts" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="7" size="1" type="uint8">
+      <sysvar name="acu_driverSeatBeltStsValid" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="acu_driverSeatBeltSts" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="acu_secondRightSts" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="acu_secondMiddleSts" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="11" size="1" type="uint8">
+      <sysvar name="acu_secondLeftSts" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="12" size="1" type="uint8">
+      <sysvar name="acu_passengerSts" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="13" size="1" type="uint8">
+      <sysvar name="acu_secondRightSeatBeltSts" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="14" size="1" type="uint8">
+      <sysvar name="acu_crashOutputSts" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="15" size="1" type="uint8">
+      <sysvar name="RollingCounter380" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+    <item offset="16" size="1" type="uint8">
+      <sysvar name="Checksum380" namespace="FDX::ACU_state" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="777" size="11">
+    <identifier>GSM1 777</identifier>
+    <item offset="0" size="1" type="uint8">
+      <sysvar name="gsm_gearSelectorPosValid" namespace="FDX::GSM1" value="raw"/>
+    </item>
+    <item offset="1" size="1" type="uint8">
+      <sysvar name="gsm_gearSelectorPos" namespace="FDX::GSM1" value="raw"/>
+    </item>
+    <item offset="2" size="1" type="uint8">
+      <sysvar name="gsm_faultLevel" namespace="FDX::GSM1" value="raw"/>
+    </item>
+    <item offset="3" size="1" type="uint8">
+      <sysvar name="swm_epb_switch_status" namespace="FDX::GSM1" value="raw"/>
+    </item>
+    <item offset="4" size="1" type="uint8">
+      <sysvar name="swm_epb_switch" namespace="FDX::GSM1" value="raw"/>
+    </item>
+    <item offset="5" size="1" type="uint8">
+      <sysvar name="gsm_warnInformation" namespace="FDX::GSM1" value="raw"/>
+    </item>
+    <item offset="6" size="2" type="uint16">
+      <sysvar name="gsm_fault_code" namespace="FDX::GSM1" value="raw"/>
+    </item>
+    <item offset="8" size="1" type="uint8">
+      <sysvar name="gsm_knob_position" namespace="FDX::GSM1" value="raw"/>
+    </item>
+    <item offset="9" size="1" type="uint8">
+      <sysvar name="RollingCounter309" namespace="FDX::GSM1" value="raw"/>
+    </item>
+    <item offset="10" size="1" type="uint8">
+      <sysvar name="Checksum309" namespace="FDX::GSM1" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="2015" size="8">
+    <identifier>DiagReq_FUN 2015</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="FUN_DiagReq" namespace="FDX::DiagReq_FUN" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1800" size="8">
+    <identifier>DiagReq_EPB_CHA 1800</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="EPB_DiagReq" namespace="FDX::DiagReq_EPB_CHA" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1928" size="8">
+    <identifier>DiagResp_EPB_CHA 1928</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="EPB_DiagResp" namespace="FDX::DiagResp_EPB_CHA" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1860" size="8">
+    <identifier>DiagReq_EPS 1860</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="EPS_DiagReq" namespace="FDX::DiagReq_EPS" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1988" size="8">
+    <identifier>DiagResp_EPS 1988</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="EPS_DiagResp" namespace="FDX::DiagResp_EPS" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1810" size="8">
+    <identifier>DiagReq_IPB 1810</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="IPB_DiagReq" namespace="FDX::DiagReq_IPB" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1938" size="8">
+    <identifier>DiagResp_IPB 1938</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="IPB_DiagResp" namespace="FDX::DiagResp_IPB" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="2023" size="8">
+    <identifier>DiagReq_IPB_OBD 2023</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="IPB_DiagReq_OBD" namespace="FDX::DiagReq_IPB_OBD" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="2031" size="8">
+    <identifier>DiagResp_IPB_OBD 2031</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="IPB_DiagResp_OBD" namespace="FDX::DiagResp_IPB_OBD" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="2019" size="8">
+    <identifier>DiagReq_MCUF 2019</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="MCUF_DiagReq" namespace="FDX::DiagReq_MCUF" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="2027" size="8">
+    <identifier>DiagResp_MCUF 2027</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="MCUF_DiagResp" namespace="FDX::DiagResp_MCUF" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1825" size="8">
+    <identifier>DiagReq_HCM_L 1825</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="HCM_L_DiagReq" namespace="FDX::DiagReq_HCM_L" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1953" size="8">
+    <identifier>DiagResp_HCM_L 1953</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="HCM_L_DiagResp" namespace="FDX::DiagResp_HCM_L" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1824" size="8">
+    <identifier>DiagReq_HCM_R 1824</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="HCM_R_DiagReq" namespace="FDX::DiagReq_HCM_R" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1952" size="8">
+    <identifier>DiagResp_HCM_R 1952</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="HCM_R_DiagResp" namespace="FDX::DiagResp_HCM_R" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1839" size="8">
+    <identifier>DiagReq_RLLM_Fix 1839</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="RLLM_Fix_DiagReq" namespace="FDX::DiagReq_RLLM_Fix" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1967" size="8">
+    <identifier>DiagResp_RLLM_Fix 1967</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="RLLM_Fix_DiagResp" namespace="FDX::DiagResp_RLLM_Fix" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1821" size="8">
+    <identifier>DiagReq_RLM_Move 1821</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="RLM_Move_DiagReq" namespace="FDX::DiagReq_RLM_Move" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1949" size="8">
+    <identifier>DiagResp_RLM_Move 1949</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="RLM_Move_DiagResp" namespace="FDX::DiagResp_RLM_Move" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1823" size="8">
+    <identifier>DiagReq_RRLM_Fix 1823</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="RRLM_Fix_DiagReq" namespace="FDX::DiagReq_RRLM_Fix" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1951" size="8">
+    <identifier>DiagResp_RRLM_Fix 1951</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="RRLM_Fix_DiagResp" namespace="FDX::DiagResp_RRLM_Fix" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1828" size="8">
+    <identifier>DiagReq_VIU_F 1828</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="VIU_F_DiagReq" namespace="FDX::DiagReq_VIU_F" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1956" size="8">
+    <identifier>DiagResp_VIU_F 1956</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="VIU_F_DiagResp" namespace="FDX::DiagResp_VIU_F" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1854" size="8">
+    <identifier>DiagReq_GL 1854</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="GL_DiagReq" namespace="FDX::DiagReq_GL" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1982" size="8">
+    <identifier>DiagResp_GL 1982</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="GL_DiagResp" namespace="FDX::DiagResp_GL" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1796" size="8">
+    <identifier>DiagReq_POT 1796</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="POT_DiagReq" namespace="FDX::DiagReq_POT" value="raw"/>
+    </item>
+  </datagroup>
+  <datagroup groupID="1924" size="8">
+    <identifier>DiagResp_POT 1924</identifier>
+    <item offset="0" size="8" type="uint64">
+      <sysvar name="POT_DiagResp" namespace="FDX::DiagResp_POT" value="raw"/>
+    </item>
+  </datagroup>
+</canoefdxdescription>
