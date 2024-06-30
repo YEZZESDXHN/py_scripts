@@ -94,7 +94,7 @@ def generate_dbc_FDX(dbc_file, xml_file):
             else:
                 print("signal size to long")
             item=ET.SubElement(dategroup,"item",{"offset":str(offset), "size":str(size), "type":type})
-            ET.SubElement(item, "sysvar", {"name": signal.name, "namespace": "FDX::"+message.name, "value": "raw"})
+            ET.SubElement(item, "sysvar", {"name": signal.name, "namespace": "FDX::"+message.name+"_"+str(hex(message.frame_id)), "value": "raw"})
 
 
         dategroup.set("size",str(offset+size))
@@ -110,9 +110,11 @@ def generate_dbc_FDX(dbc_file, xml_file):
     with open(xml_file, "w") as f:
         f.write(pretty_xml)
 
-dbc_file = "CANFD1.dbc"
-sys_xml_file = "FDX_sys.xml"
 
-FDX_xml_file = "FDX_Description.xml"
-generate_dbc_xml(dbc_file, sys_xml_file)
-generate_dbc_FDX(dbc_file, FDX_xml_file)
+if __name__ == "__main__":
+    dbc_file = "CANFD1.dbc"
+    sys_xml_file = "FDX_sys.xml"
+
+    FDX_xml_file = "FDX_Description.xml"
+    generate_dbc_xml(dbc_file, sys_xml_file)
+    generate_dbc_FDX(dbc_file, FDX_xml_file)
