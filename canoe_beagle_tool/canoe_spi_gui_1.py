@@ -13,7 +13,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 
 from beagle_canoe import Ui_MainWindow
 
-
+# pyinstaller .\canoe_spi_gui_1.py -F --add-data="beagle.dll;." -w
 class CANoeThread(QThread):
     canoe_status = pyqtSignal(object)
 
@@ -99,12 +99,10 @@ class CANoeFDXClientThread(QThread):
         self.to_canoe_data_queue = to_canoe_data_queue
         self.udp_socket=udp_socket
         self.remote_ip_port=remote_ip_port
+        self._stop_flag=False
 
     def run(self):
         count = 0
-
-
-
         while True:
             count = count + 1
             if count == 0xffff:
@@ -133,11 +131,14 @@ class CANoeFDXClientThread(QThread):
 
                     byte_array = bytearray([0x43, 0x41, 0x4E, 0x6F, 0x65, 0x46, 0x44, 0x58,
                                             0x02, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01, 0x00,
-                                            0x02, 8, 0x00, 0x05, 0x00, 0xfe, 0x02, 0])
-                    data2 = bytearray()
-                    for b in data:
-                        data2.extend([0x00, 0x00, 0x00, b])
-                    byte_array.extend(data2)
+                                            0x00, 0x88, 0x00, 0x05, 0x00, 0xfe, 0x00, 0x80])
+
+                    byte_array.extend(data)
+                    # data2 = bytearray()
+
+                    # for b in data:
+                    #     data2.extend([0x00, 0x00, 0x00, b])
+                    # byte_array.extend(data2)
 
                     if data[8] == 0x10:
                         time.sleep(0.01)
@@ -148,21 +149,24 @@ class CANoeFDXClientThread(QThread):
 
                     self.udp_socket.sendto(byte_array, self.remote_ip_port)
 
-                    # 检查是否需要停止
-                    if QThread.currentThread().isInterruptionRequested():
-                        break
 
+                    if self._stop_flag:
+                        break
 
             except queue.Empty:
                 # 处理队列为空的情况，例如打印日志或进行其他操作
                 pass
                 # print("队列为空，等待数据...")
 
+    def stop(self):
+        self._stop_flag=True
+
 
 class BeagleThread(QThread):
     spi_id_received = pyqtSignal(int)
     def __init__(self, to_canoe_data_queue):
         super().__init__()
+        self._stop_flag = False
         self.spi_message_id=0x41
         self.to_canoe_data_queue = to_canoe_data_queue
         self.port = 0  # open port 0 by default
@@ -178,10 +182,10 @@ class BeagleThread(QThread):
         self.num = 0
     def update_spi_message_id(self,spi_id):
         self.spi_message_id=spi_id
-
+    def stop(self):
+        self._stop_flag = True
 
     def run(self):
-
         # Open the device
         self.beagle = bg_open(self.port)
 
@@ -268,7 +272,7 @@ class BeagleThread(QThread):
             sys.exit(1)
 
         # print("index,time(ns),SPI,status,mosi0/miso0 ... mosiN/misoN")
-        sys.stdout.flush()
+        # sys.stdout.flush()
 
         i = 0
 
@@ -279,6 +283,10 @@ class BeagleThread(QThread):
 
         # Capture and print information for each transaction
         while (i < num_packets or num_packets == 0):
+            # 检查是否需要停止
+            if self._stop_flag:
+                print('break')
+                break
 
             # Read transaction with bit timing data
             (count, status, time_sop, time_duration, time_dataoffset, data_mosi, \
@@ -303,7 +311,7 @@ class BeagleThread(QThread):
             i += 1
             if (count <= 0):
                 print("")
-                sys.stdout.flush()
+                # sys.stdout.flush()
 
                 if (count < 0):
                     break;
@@ -319,9 +327,7 @@ class BeagleThread(QThread):
                     byte_array = bytearray(data_mosi)
                     try:
                         self.to_canoe_data_queue.put(byte_array,block=False)
-                        # 检查是否需要停止
-                        if QThread.currentThread().isInterruptionRequested():
-                            break
+
                         # print(self.to_canoe_data_queue.qsize())
                     except queue.Full:
                         print("队列已满")
@@ -338,6 +344,8 @@ class BeagleThread(QThread):
 
         # Stop the capture
         bg_disable(self.beagle)
+
+        bg_close(self.beagle)
 
 
 class MainWindows(QMainWindow, Ui_MainWindow):
@@ -442,10 +450,9 @@ class MainWindows(QMainWindow, Ui_MainWindow):
                 print(f"Error in UDP server: {e}")
 
         else:
-
-            self.beagle_thread.quit()
+            self.beagle_thread.stop()
             self.canoe_FDX_server_thread.terminate()
-            self.canoe_FDX_client_thread.quit()
+            self.canoe_FDX_client_thread.stop()
 
             self.local_socket.close()
 
@@ -484,7 +491,7 @@ class MainWindows(QMainWindow, Ui_MainWindow):
             self.PB_StartCANoe.setText("stopCANoe")
 
     def run_canoe(self):
-
+        print('----')
         if self.canoe_status == 1 or self.canoe_status == 0:  # 打开
             self.to_canoe_data_queue.put('start canoe')
         elif self.canoe_status == 2:  # 运行

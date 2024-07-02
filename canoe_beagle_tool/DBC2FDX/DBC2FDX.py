@@ -1,6 +1,9 @@
+import time
+
 import cantools
 import xml.etree.ElementTree as ET
 from xml.dom.minidom import parseString
+
 
 def generate_dbc_xml(dbc_file, xml_file):
     """
@@ -10,7 +13,7 @@ def generate_dbc_xml(dbc_file, xml_file):
         dbc_file (str): DBC 文件路径。
         xml_file (str): XML 文件保存路径。
     """
-    db = cantools.database.load_file(dbc_file)
+    db = cantools.database.load_file(dbc_file,cache_dir='./temp')
     root = ET.Element("systemvariables", {"version": "4"})
     namespace1 = ET.SubElement(root, "namespace", {"name": "", "comment": "", "interface": ""})
     namespace2 = ET.SubElement(namespace1, "namespace", {"name": "FDX", "comment": "", "interface": ""})
@@ -56,7 +59,7 @@ def generate_dbc_xml(dbc_file, xml_file):
 
 
 def generate_dbc_FDX(dbc_file, xml_file):
-    db = cantools.database.load_file(dbc_file)
+    db = cantools.database.load_file(dbc_file,cache_dir='./temp')
     root = ET.Element("canoefdxdescription", {"version": "1.0"})
     for message in db.messages:
         dategroup = ET.SubElement(root,"datagroup",{"groupID":str(message.frame_id),"size":""})
@@ -111,10 +114,22 @@ def generate_dbc_FDX(dbc_file, xml_file):
         f.write(pretty_xml)
 
 
+
+
+
+
+
 if __name__ == "__main__":
-    dbc_file = "CANFD1.dbc"
+    # dbc_file = "CANFD1.dbc"
+    # 打印格式化时间
+
+    dbc_file = "Core_Application_Message_protocol.dbc"
+    # dbc_file = "CANFD1.dbc"
     sys_xml_file = "FDX_sys.xml"
 
     FDX_xml_file = "FDX_Description.xml"
+
+
     generate_dbc_xml(dbc_file, sys_xml_file)
     generate_dbc_FDX(dbc_file, FDX_xml_file)
+
