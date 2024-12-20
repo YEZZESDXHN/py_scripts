@@ -182,6 +182,32 @@
      <number>2809</number>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>fdx</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PB_loaddbc">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load DBC</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -189,11 +215,23 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menutools">
+    <property name="title">
+     <string>tools</string>
+    </property>
+    <addaction name="actionGenerateFDXFile"/>
+   </widget>
+   <addaction name="menutools"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionGenerateFDXFile">
+   <property name="text">
+    <string>GenerateFDXFile</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

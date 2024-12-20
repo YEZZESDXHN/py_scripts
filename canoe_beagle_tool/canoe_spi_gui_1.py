@@ -1,3 +1,4 @@
+# pyinstaller .\canoe_spi_gui_1.py -F --add-data="beagle.dll;." -w
 import sys
 import queue
 import time
@@ -13,7 +14,114 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 
 from beagle_canoe import Ui_MainWindow
 
-# pyinstaller .\canoe_spi_gui_1.py -F --add-data="beagle.dll;." -w
+import cantools
+import xml.etree.ElementTree as ET
+from xml.dom.minidom import parseString
+
+
+class generate_FDX_Thread(QThread):
+    def __init__(self, db):
+        super().__init__()
+        self.db= db
+    def run(self):
+        root = ET.Element("systemvariables", {"version": "4"})
+        namespace1 = ET.SubElement(root, "namespace", {"name": "", "comment": "", "interface": ""})
+        namespace2 = ET.SubElement(namespace1, "namespace", {"name": "FDX", "comment": "", "interface": ""})
+
+        # 获取消息名称作为第三层命名空间的名称
+        message_name = ""
+        for message in self.db.messages:
+            message_name = message.name
+            message_namespace = ET.SubElement(namespace2, "namespace",
+                                              {"name": message_name + "_" + str(hex(message.frame_id)), "comment": "",
+                                               "interface": ""})  # message name
+            for signal in message.signals:
+                signal_len = signal.length
+                if signal_len <= 32:
+                    bitcount_str = '32'
+                elif signal_len <= 64:
+                    bitcount_str = '64'
+                else:
+                    print("signal length is to long")
+                # signal_name
+                signal_element = ET.SubElement(message_namespace, "variable",
+                                               {"anlyzLocal": "2",
+                                                "readOnly": "true",
+                                                "valueSequence": "false",
+                                                "unit": "",
+                                                "name": signal.name,
+                                                "comment": "",
+                                                "bitcount": bitcount_str,
+                                                "isSigned": "false",
+                                                "encoding": "65001",
+                                                "type": "int"})
+
+        # 格式化 XML 输出
+        tree = ET.ElementTree(root)
+        xml_string = ET.tostring(root).decode()
+        dom = parseString(xml_string)
+        pretty_xml = dom.toprettyxml(indent="  ")
+
+        # 写入文件
+        with open('./fdx/sys.xml', "w") as f:
+            f.write(pretty_xml)
+
+        root = ET.Element("canoefdxdescription", {"version": "1.0"})
+        for message in self.db.messages:
+            dategroup = ET.SubElement(root, "datagroup", {"groupID": str(message.frame_id), "size": ""})
+            identifier = ET.SubElement(dategroup, "identifier").text = message.name + ' ' + str(message.frame_id)
+            offset = 0
+            size = 0
+            type = "uint8"
+            for signal in message.signals:
+                offset = offset + size
+                if signal.length > 0 and signal.length <= 8:
+                    size = 1
+                    if signal.is_signed:
+                        type = "int8"
+                    else:
+                        type = "uint8"
+
+                elif signal.length > 8 and signal.length <= 16:
+                    size = 2
+                    if signal.is_signed:
+                        type = "int16"
+                    else:
+                        type = "uint16"
+                elif signal.length > 16 and signal.length <= 32:
+                    size = 4
+                    if signal.is_signed:
+                        type = "int32"
+                    else:
+                        type = "uint32"
+                elif signal.length > 32 and signal.length <= 64:
+                    size = 8
+                    if signal.is_signed:
+                        type = "int64"
+                    else:
+                        type = "uint64"
+                else:
+                    print("signal size to long")
+                item = ET.SubElement(dategroup, "item", {"offset": str(offset), "size": str(size), "type": type})
+                ET.SubElement(item, "sysvar", {"name": signal.name,
+                                               "namespace": "FDX::" + message.name + "_" + str(hex(message.frame_id)),
+                                               "value": "raw"})
+
+            dategroup.set("size", str(offset + size))
+
+        # 格式化 XML 输出
+        tree = ET.ElementTree(root)
+        xml_string = ET.tostring(root).decode()
+        dom = parseString(xml_string)
+        pretty_xml = dom.toprettyxml(indent="  ")
+
+        # 写入文件
+        with open('./fdx/FDX.xml', "w") as f:
+            f.write(pretty_xml)
+
+
+
+
 class CANoeThread(QThread):
     canoe_status = pyqtSignal(object)
 
@@ -164,11 +272,12 @@ class CANoeFDXClientThread(QThread):
 
 class BeagleThread(QThread):
     spi_id_received = pyqtSignal(int)
-    def __init__(self, to_canoe_data_queue):
+    def __init__(self, to_canoe_data_queue,db):
         super().__init__()
         self._stop_flag = False
         self.spi_message_id=0x41
         self.to_canoe_data_queue = to_canoe_data_queue
+        self.db=db
         self.port = 0  # open port 0 by default
         self.beagle = 0
 
@@ -324,7 +433,15 @@ class BeagleThread(QThread):
             #         self.to_canoe_data_queue.put(data_mosi)
             if (data_mosi[6] == 0):
                 if (data_mosi[8] == self.spi_message_id):
+
+
+                    message=self.db.get_message_by_frame_id(self.spi_message_id)
+
+
                     byte_array = bytearray(data_mosi)
+                    extracted_data = byte_array[8:8 + message.length]
+                    decoded_message = message.decode(extracted_data)
+
                     try:
                         self.to_canoe_data_queue.put(byte_array,block=False)
 
@@ -355,6 +472,8 @@ class MainWindows(QMainWindow, Ui_MainWindow):
         self.canoe_cfg_path = r'C:/Workspace/02 INEOS/03 Project/CANoe_INEOS/INEOS_CANoe14_V1.0.cfg'
         self.canoe_status = 0
         self.CANoeFDXstate=False
+        self.dbc_file=None
+        self.db=None
         self.init()
 
     def init(self):
@@ -363,7 +482,7 @@ class MainWindows(QMainWindow, Ui_MainWindow):
 
         # 创建线程实例
         self.canoe_thread = CANoeThread(self.canoe_cfg_path)
-        self.beagle_thread = BeagleThread(self.to_canoe_data_queue)
+        self.beagle_thread = BeagleThread(self.to_canoe_data_queue,self.db)
 
 
 
@@ -373,7 +492,7 @@ class MainWindows(QMainWindow, Ui_MainWindow):
         self.PB_StartCANoe.clicked.connect(self.run_canoe)
         self.PB_StartBeagle.clicked.connect(self.run_beagle)
         self.PB_CANoeFDX.clicked.connect(self.creatCANoeFDX)
-
+        self.PB_loaddbc.clicked.connect(self.load_dbc)
 
         self.lineEdit_SPI_Id.editingFinished.connect(self.get_spi_id)
         self.beagle_thread.spi_id_received.connect(self.beagle_thread.update_spi_message_id)
@@ -386,7 +505,9 @@ class MainWindows(QMainWindow, Ui_MainWindow):
         self.lineEdit_SPI_Id.setDisabled(True)
 
 
-
+    def load_dbc(self):
+        self.dbc_file="Core_Application_Message_protocol.dbc"
+        self.db = cantools.database.load_file(self.dbc_file, cache_dir='./temp')
 
 
     def get_spi_id(self):

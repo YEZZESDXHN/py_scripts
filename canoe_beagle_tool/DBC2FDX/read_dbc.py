@@ -1,8 +1,8 @@
 import cantools
-
+print('test0')
 # 加载 DBC 文件
-db = cantools.database.load_file('CANFD1.dbc')
-
+db = cantools.database.load_file('Core_Application_Message_protocol.dbc')
+print('test')
 # 遍历所有报文
 for message in db.messages:
     print(f"报文名称: {message.name}")

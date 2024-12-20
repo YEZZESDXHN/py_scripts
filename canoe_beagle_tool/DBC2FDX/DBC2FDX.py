@@ -14,6 +14,15 @@ def generate_dbc_xml(dbc_file, xml_file):
         xml_file (str): XML 文件保存路径。
     """
     db = cantools.database.load_file(dbc_file,cache_dir='./temp')
+    msg=db.get_message_by_frame_id(0x41)
+    mosi = bytearray(b'\x01' * 116)
+    decoded_message = msg.decode(mosi)
+    # for value in decoded_message.values():
+    #     print(value)
+    for key,value in decoded_message.items():
+        print(key,value)
+
+
     root = ET.Element("systemvariables", {"version": "4"})
     namespace1 = ET.SubElement(root, "namespace", {"name": "", "comment": "", "interface": ""})
     namespace2 = ET.SubElement(namespace1, "namespace", {"name": "FDX", "comment": "", "interface": ""})
